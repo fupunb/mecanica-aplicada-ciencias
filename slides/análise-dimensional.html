@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Mecânica Aplicada às Ciências</title>
+
+	<!-- Reveal.js CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reset.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.css">
+
+	<!-- Theme -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/theme/night.css" id="theme">
+
+	<!-- Google fonts preconnect -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<!-- Sans: Montserrat -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+
+	<!-- Sans: Roboto -->
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Slab:wght@400;700&display=swap">
+
+	<!-- Serif: Domine -->
+	<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+
+	<!-- Serif: EB Garamond -->
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+		rel="stylesheet">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/monokai.min.css">
+
+	<!-- MathJax Configuration -->
+	<script>
+		MathJax = {
+			tex: {
+				inlineMath: [['$', '$'], ['\\(', '\\)']],
+				displayMath: [['$$', '$$'], ['\\[', '\\]']],
+				processEscapes: true
+			},
+			svg: {
+				fontCache: 'global'
+			}
+		};
+	</script>
+	<script type="text/javascript" id="MathJax-script" async
+		src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+	<style>
+		/* Change theme fonts */
+		:root {
+			--r-main-font: "EB Garamond", serif;
+			--r-heading-font: "EB Garamond", serif;
+		}
+
+		/* Keep capitalization as typed for headings */
+		.reveal h1,
+		.reveal h2,
+		.reveal h3,
+		.reveal h4,
+		.reveal h5 {
+			text-transform: none;
+			letter-spacing: 0.00em;
+		}
+
+		/* Custom font sizes */
+		.smaller-text {
+			font-size: 0.8em;
+		}
+
+		.spaced-small-caps {
+			font-size: 1.0em;
+			font-weight: bold;
+			font-variant: small-caps;
+			letter-spacing: 0.1em;
+		}
+
+		/* Custom styles for equations */
+		.equation {
+			font-size: 1.2em;
+			margin: 20px 0;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<div class="slides">
+
+			<!-- Slide 1 -->
+			<section data-background-opacity="0.40" data-background-size="contain"
+				data-background-image="https://raw.githubusercontent.com/bgeneto/MCA/refs/heads/main/imagens/logo_unb.webp">
+				<!-- Universidade | Faculdade | Departamento  -->
+				<h3 style="margin-top: 15%;"><strong>Universidade de Brasília</strong></h3>
+				<h3>Faculdade UnB Planaltina</h3>
+				<!-- disciplina -->
+				<h4 style="margin-top: 15%;">FUP0407 - Mecânica Aplicada às Ciências</h4>
+				<!-- professor -->
+				<div class="smaller-text" style="margin-top: 12%;">
+					<div><img src="https://gravatar.com/avatar/60d294c6125ae4f5859f4b229249ec06?size=64" alt="avatar"
+							style="vertical-align: middle;"></div>
+					<div><em>Prof. Bernhard G. Enders</em></div>
+				</div>
+			</section>
+
+			<!-- Slide 2 -->
+			<section>
+				<!--<img src="https://raw.githubusercontent.com/bgeneto/MCA/main/imagens/logo_unb.png"
+					style="width: 200px; opacity:1.0; border:0px;">-->
+				<h2>Análise Dimensional</h2>
+				<ul>
+					<li class="fragment">
+						A toda grandeza medida ou calculada está associada uma <span class="spaced-small-caps">dimensão</span>.
+					<li class="fragment">
+						<span class="spaced-small-caps">Análise Dimensional</span> é uma técnica utilizada para verificar a
+						consistência de equações físicas ou para derivar relações entre grandezas físicas.
+					</li>
+					<li class="fragment">
+						Ela se baseia nas dimensões fundamentais (comprimento,
+						massa e tempo) das grandezas envolvidas.
+					</li>
+					<li class="fragment">
+						As dimensões fundamentais são representadas por letras maiúsculas:
+						<ul>
+							<li>L: comprimento</li>
+							<li>M: massa</li>
+							<li>T: tempo</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+
+			<!-- Slide 3 -->
+			<section>
+				<ul>
+					<li>
+						As unidades nas quais as grandezas são expressas não afetam a dimensão das grandezas.
+					</li>
+					<li class="fragment">
+						Todas as equações devem ser dimensionalmente consistentes; ou seja, as dimensões nos dois lados de uma
+						equação devem ser as mesmas.
+					</li>
+				</ul>
+			</section>
+
+			<div class='reveal'>
+				<div class='footer'>
+					Use left and right arrows to navigate
+				</div>
+			</div>
+
+			<!-- Slide 4 -->
+			<section>
+				<h2>Velocity and Speed</h2>
+				<ul>
+					<li class="fragment"><strong>Average Velocity ($\bar{v}$):</strong> Rate of change of position.
+						Vector.
+						<div class="equation">$\bar{v} = \frac{\Delta x}{\Delta t} = \frac{x_f - x_i}{t_f - t_i}$</div>
+					</li>
+					<li class="fragment"><strong>Average Speed ($\bar{s}$):</strong> Total distance traveled divided by
+						time. Scalar.
+						<div class="equation">$\bar{s} = \frac{\text{Total Distance}}{\Delta t}$</div>
+					</li>
+					<li class="fragment"><strong>Instantaneous Velocity ($v$):</strong> Velocity at a specific moment in
+						time. The limit of average velocity as $\Delta t \to 0$. Vector.
+						<div class="equation">$v = \lim_{\Delta t \to 0} \frac{\Delta x}{\Delta t} = \frac{dx}{dt}$
+						</div>
+					</li>
+					<li class="fragment"><strong>Instantaneous Speed:</strong> Magnitude of instantaneous velocity.
+						$|v|$. Scalar.</li>
+				</ul>
+				<!-- Placeholder for image/diagram: Car on road showing displacement vs distance -->
+				<p class="fragment smaller-text">
+					<em><!-- Placeholder for image/diagram: Velocity vs Speed example --></em>
+				</p>
+			</section>
+
+			<!-- Slide 5 -->
+			<section>
+				<h2>Acceleration</h2>
+				<ul>
+					<li class="fragment"><strong>Average Acceleration ($\bar{a}$):</strong> Rate of change of velocity.
+						Vector.
+						<div class="equation">$\bar{a} = \frac{\Delta v}{\Delta t} = \frac{v_f - v_i}{t_f - t_i}$</div>
+					</li>
+					<li class="fragment"><strong>Instantaneous Acceleration ($a$):</strong> Acceleration at a specific
+						moment. The limit of average acceleration as $\Delta t \to 0$. Vector.
+						<div class="equation">$a = \lim_{\Delta t \to 0} \frac{\Delta v}{\Delta t} = \frac{dv}{dt} =
+							\frac{d^2x}{dt^2}$</div>
+					</li>
+					<li class="fragment">Units: meters per second squared (m/s²).</li>
+					<li class="fragment"><strong>Important:</strong> Acceleration direction indicates how velocity is
+						*changing*, not necessarily the direction of motion.
+						<ul>
+							<li class="fragment">Positive $a$: Velocity becomes more positive (or less negative).</li>
+							<li class="fragment">Negative $a$: Velocity becomes more negative (or less positive).</li>
+							<li class="fragment">Speeding up: $v$ and $a$ have the same sign.</li>
+							<li class="fragment">Slowing down: $v$ and $a$ have opposite signs.</li>
+						</ul>
+					</li>
+				</ul>
+				<!-- Placeholder for image/diagram: Car speeding up vs slowing down -->
+				<p class="fragment smaller-text"><em><!-- Placeholder for image/diagram: Acceleration examples --></em>
+				</p>
+			</section>
+
+			<!-- Slide 6: Graphical Analysis Intro -->
+			<section>
+				<h2>Graphical Analysis of Motion</h2>
+				<p>Graphs provide powerful visual insights into motion.</p>
+				<ul>
+					<li class="fragment">Position vs. Time ($x-t$) graph</li>
+					<li class="fragment">Velocity vs. Time ($v-t$) graph</li>
+					<li class="fragment">Acceleration vs. Time ($a-t$) graph</li>
+				</ul>
+				<p class="fragment">Understanding the relationships between these graphs is key!</p>
+				<!-- Placeholder for image/diagram: Trio of related x-t, v-t, a-t graphs -->
+				<p class="fragment smaller-text"><em><!-- Placeholder for image/diagram: Example graph set --></em></p>
+			</section>
+
+			<!-- Slide 7: Position-Time Graphs -->
+			<section>
+				<h2>Position vs. Time ($x-t$) Graph</h2>
+				<ul>
+					<li class="fragment">Plots position ($y$-axis) against time ($x$-axis).</li>
+					<li class="fragment"><strong>Slope:</strong> The slope of the $x-t$ graph gives the
+						<strong>instantaneous velocity</strong> ($v = dx/dt$).
+						<ul>
+							<li>Positive slope: Positive velocity (moving in + direction).</li>
+							<li>Negative slope: Negative velocity (moving in - direction).</li>
+							<li>Zero slope: Zero velocity (at rest).</li>
+						</ul>
+					</li>
+					<li class="fragment"><strong>Curvature:</strong> Relates to acceleration.
+						<ul>
+							<li>Concave up (like a smile): Positive acceleration.</li>
+							<li>Concave down (like a frown): Negative acceleration.</li>
+							<li>Straight line: Constant velocity (zero acceleration).</li>
+						</ul>
+					</li>
+				</ul>
+				<!-- Placeholder for image/diagram: Examples of x-t graphs (constant v, changing v) -->
+				<p class="fragment smaller-text"><em><!-- Placeholder for image/diagram: x-t graph examples --></em></p>
+			</section>
+
+			<!-- Slide 8: Velocity-Time Graphs -->
+			<section>
+				<h2>Velocity vs. Time ($v-t$) Graph</h2>
+				<ul>
+					<li class="fragment">Plots velocity ($y$-axis) against time ($x$-axis).</li>
+					<li class="fragment"><strong>Slope:</strong> The slope of the $v-t$ graph gives the
+						<strong>instantaneous acceleration</strong> ($a = dv/dt$).
+					</li>
+					<li class="fragment"><strong>Area Under the Curve:</strong> The area between the $v-t$ curve and the
+						time axis represents the <strong>displacement</strong> ($\Delta x = \int v dt$).
+						<ul>
+							<li>Area above t-axis: Positive displacement.</li>
+							<li>Area below t-axis: Negative displacement.</li>
+						</ul>
+					</li>
+					<li class="fragment">Horizontal line: Constant velocity ($a=0$).</li>
+					<li class="fragment">Straight line with non-zero slope: Constant acceleration.</li>
+				</ul>
+				<!-- Placeholder for image/diagram: Examples of v-t graphs and area calculation -->
+				<p class="fragment smaller-text"><em><!-- Placeholder for image/diagram: v-t graph examples --></em></p>
+			</section>
+
+			<!-- Slide 9: Acceleration-Time Graphs -->
+			<section>
+				<h2>Acceleration vs. Time ($a-t$) Graph</h2>
+				<ul>
+					<li class="fragment">Plots acceleration ($y$-axis) against time ($x$-axis).</li>
+					<li class="fragment">Often simpler in introductory physics, especially with constant acceleration
+						(horizontal line).</li>
+					<li class="fragment"><strong>Area Under the Curve:</strong> The area between the $a-t$ curve and the
+						time axis represents the <strong>change in velocity</strong> ($\Delta v = \int a dt$).</li>
+				</ul>
+				<!-- Placeholder for image/diagram: Example a-t graph (constant a) -->
+				<p class="fragment smaller-text"><em><!-- Placeholder for image/diagram: a-t graph example --></em></p>
+			</section>
+
+			<!-- Slide 10: Constant Acceleration -->
+			<section>
+				<h2>Motion with Constant Acceleration</h2>
+				<p>A very common and important special case!</p>
+				<p class="fragment">If acceleration $a$ is constant, we can derive specific equations relating $x, v,
+					a,$ and $t$.</p>
+				<p class="fragment">Let $t_i = 0$, $x_i = x_0$, $v_i = v_0$, $x_f = x$, $v_f = v$, $t_f = t$.</p>
+				<p class="fragment">These are the "Kinematic Equations".</p>
+				<!-- Placeholder for image/diagram: Object accelerating uniformly -->
+				<p class="fragment smaller-text">
+					<em><!-- Placeholder for image/diagram: Constant acceleration scenario --></em>
+				</p>
+			</section>
+
+			<!-- Slide 11: Kinematic Equations (Split for clarity) -->
+			<section>
+				<h2>The Kinematic Equations (for constant $a$)</h2>
+				<ol>
+					<li class="fragment">Velocity as a function of time:
+						<div class="equation">$v = v_0 + at$</div>
+						<small>(Derived from $a = \Delta v / \Delta t$)</small>
+					</li>
+					<li class="fragment">Position as a function of time:
+						<div class="equation">$\Delta x = x - x_0 = v_0 t + \frac{1}{2} a t^2$</div>
+						<small>(Derived by integrating $v(t)$ or using area of $v-t$ graph)</small>
+					</li>
+				</ol>
+			</section>
+
+			<!-- Slide 12: Kinematic Equations Cont. -->
+			<section>
+				<h2>The Kinematic Equations (cont.)</h2>
+				<ol start="3">
+					<li class="fragment">Velocity as a function of position:
+						<div class="equation">$v^2 = v_0^2 + 2 a \Delta x$</div>
+						<small>(Derived by eliminating $t$ between eq. 1 and 2)</small>
+					</li>
+					<li class="fragment">(Optional but useful) Position using average velocity:
+						<div class="equation">$\Delta x = \frac{1}{2} (v_0 + v) t$</div>
+						<small>(Valid only for constant $a$)</small>
+					</li>
+				</ol>
+				<p class="fragment"><strong>Choose the equation that fits your knowns and unknowns!</strong></p>
+			</section>
+
+			<!-- Slide 13: Problem-Solving Strategy -->
+			<section>
+				<h2>Problem-Solving Strategy</h2>
+				<ol>
+					<li class="fragment"><strong>Read Carefully:</strong> Understand the situation.</li>
+					<li class="fragment"><strong>Draw a Diagram:</strong> Sketch the motion, label axes, indicate
+						initial/final points. Choose an origin and positive direction.</li>
+					<li class="fragment"><strong>List Knowns & Unknowns:</strong> Identify given values ($x_0, v_0, a,
+						t, x, v$) and what you need to find. Ensure units are consistent!</li>
+					<li class="fragment"><strong>Choose Equation(s):</strong> Select the kinematic equation(s) that
+						contain your knowns and the desired unknown.</li>
+					<li class="fragment"><strong>Solve Algebraically:</strong> Rearrange the equation to solve for the
+						unknown variable *before* plugging in numbers.</li>
+					<li class="fragment"><strong>Calculate:</strong> Substitute numerical values with units.</li>
+					<li class="fragment"><strong>Check Answer:</strong> Does the sign make sense? Is the magnitude
+						reasonable? Do the units match?</li>
+				</ol>
+			</section>
+
+			<!-- Slide 14: Example Problem 1 -->
+			<section>
+				<h2>Example 1: Accelerating Car</h2>
+				<p>A car starts from rest and accelerates uniformly at $3.0 \text{ m/s}^2$ for $5.0 \text{ s}$.</p>
+				<p class="fragment">(a) What is its final velocity?</p>
+				<p class="fragment">(b) How far does it travel in this time?</p>
+
+				<div class="fragment">
+					<p><strong>Knowns:</strong> $v_0 = 0$ (starts from rest), $a = +3.0 \text{ m/s}^2$, $t = 5.0 \text{
+						s}$. Assume $x_0 = 0$.</p>
+					<p><strong>Unknowns:</strong> (a) $v$, (b) $\Delta x$ (or $x$).</p>
+				</div>
+				<div class="fragment">
+					<p>(a) Use $v = v_0 + at$</p>
+					<p>$v = 0 + (3.0 \text{ m/s}^2)(5.0 \text{ s}) = 15 \text{ m/s}$</p>
+				</div>
+				<div class="fragment">
+					<p>(b) Use $\Delta x = v_0 t + \frac{1}{2} a t^2$</p>
+					<p>$\Delta x = (0)(5.0 \text{ s}) + \frac{1}{2} (3.0 \text{ m/s}^2) (5.0 \text{ s})^2$</p>
+					<p>$\Delta x = 0 + \frac{1}{2} (3.0 \text{ m/s}^2) (25 \text{ s}^2) = 37.5 \text{ m}$</p>
+				</div>
+				<!-- Placeholder for image/diagram: Simple car diagram with labels -->
+				<p class="fragment smaller-text"><em><!-- Placeholder for image/diagram: Car accelerating --></em></p>
+			</section>
+
+			<!-- Slide 15: Free Fall -->
+			<section>
+				<h2>Special Case: Free Fall</h2>
+				<ul>
+					<li class="fragment">Motion under the influence of gravity alone (neglecting air resistance).</li>
+					<li class="fragment">Near Earth's surface, acceleration is approximately constant and directed
+						downwards.</li>
+					<li class="fragment">Magnitude: $g \approx 9.8 \text{ m/s}^2$.</li>
+					<li class="fragment"><strong>Sign Convention is CRUCIAL!</strong>
+						<ul>
+							<li>Commonly choose "up" as positive: Then $a = -g = -9.8 \text{ m/s}^2$.</li>
+							<li>Can choose "down" as positive: Then $a = +g = +9.8 \text{ m/s}^2$.</li>
+							<li>Be consistent within a problem!</li>
+						</ul>
+					</li>
+					<li class="fragment">Kinematic equations apply with $a$ replaced by $+g$ or $-g$.</li>
+				</ul>
+				<!-- Placeholder for image/diagram: Ball thrown upwards or dropped -->
+				<p class="fragment smaller-text"><em><!-- Placeholder for image/diagram: Free fall example --></em></p>
+			</section>
+
+			<!-- Slide 16: Example Problem 2: Free Fall -->
+			<section>
+				<h2>Example 2: Dropped Ball</h2>
+				<p>A ball is dropped from rest from a height of $20.0$ m. (Neglect air resistance).</p>
+				<p class="fragment">(a) How long does it take to hit the ground?</p>
+				<p class="fragment">(b) What is its velocity just before impact?</p>
+
+				<div class="fragment">
+					<p>Choose origin at drop point, positive direction upwards.</p>
+					<p><strong>Knowns:</strong> $y_0 = 0$, $v_0 = 0$ (dropped from rest), $y = -20.0$ m (final
+						position), $a = -g = -9.8 \text{ m/s}^2$.</p>
+					<p><strong>Unknowns:</strong> (a) $t$, (b) $v$.</p>
+				</div>
+				<div class="fragment">
+					<p>(a) Use $\Delta y = y - y_0 = v_0 t + \frac{1}{2} a t^2$</p>
+					<p>$-20.0 \text{ m} - 0 = (0)t + \frac{1}{2} (-9.8 \text{ m/s}^2) t^2$</p>
+					<p>$-20.0 = -4.9 t^2 \implies t^2 = \frac{20.0}{4.9} \approx 4.08 \text{ s}^2$</p>
+					<p>$t \approx 2.02 \text{ s}$ (Take positive root)</p>
+				</div>
+				<div class="fragment">
+					<p>(b) Use $v = v_0 + at$</p>
+					<p>$v = 0 + (-9.8 \text{ m/s}^2)(2.02 \text{ s}) \approx -19.8 \text{ m/s}$</p>
+					<p>(Negative sign indicates downward velocity, which makes sense).</p>
+					<p><em>Alternatively use $v^2 = v_0^2 + 2a\Delta y$</em></p>
+					<p>$v^2 = 0^2 + 2(-9.8 \text{ m/s}^2)(-20.0 \text{ m}) = 392 \text{ m}^2/\text{s}^2$</p>
+					<p>$v = \pm \sqrt{392} \approx \pm 19.8 \text{ m/s}$. Choose negative root because it's moving down.
+					</p>
+				</div>
+			</section>
+
+			<!-- Slide 17: Summary -->
+			<section>
+				<h2>Summary</h2>
+				<ul>
+					<li>Kinematics describes motion using position ($x$), velocity ($v$), and acceleration ($a$).</li>
+					<li>Distinguish between displacement (vector) and distance (scalar), velocity (vector) and speed
+						(scalar).</li>
+					<li>Graphs ($x-t, v-t, a-t$) are powerful tools:
+						<ul>
+							<li>Slope of $x-t$ is $v$.</li>
+							<li>Slope of $v-t$ is $a$.</li>
+							<li>Area under $v-t$ is $\Delta x$.</li>
+							<li>Area under $a-t$ is $\Delta v$.</li>
+						</ul>
+					</li>
+					<li>For <strong>constant acceleration</strong>, use the kinematic equations.</li>
+					<li>Free fall is a key example of constant acceleration ($a = \pm g$).</li>
+					<li>Follow a systematic problem-solving strategy.</li>
+				</ul>
+			</section>
+
+			<!-- Slide 18: Questions / Next Steps -->
+			<section>
+				<h2>Questions?</h2>
+				<br>
+				<h3>Next Steps:</h3>
+				<ul>
+					<li>Practice problems!</li>
+					<li>Two-Dimensional Kinematics (Projectile Motion)</li>
+					<li>Introduction to Forces (Dynamics)</li>
+				</ul>
+				<!-- Optional: Placeholder for a concluding image -->
+				<!-- <img src="path/to/your/end-image.jpg" alt="Physics Diagram"> -->
+			</section>
+
+		</div>
+	</div>
+
+	<!-- Reveal.js Core JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.js"></script>
+
+	<!-- Reveal.js Plugins (optional) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/notes/notes.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/markdown/markdown.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/highlight/highlight.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/math/math.min.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://revealjs.com/config/
+		// - https://revealjs.com/plugins/
+		Reveal.initialize({
+			hash: true,    // Add slide hashes to the URL
+			controls: true,    // Display controls in the bottom right corner
+			progress: true,    // Display a presentation progress bar
+			slideNumber: 'c/t',   // Display the page number of the current slide / total slides
+			history: true,    // Push each slide change to the browser history
+			keyboard: true,    // Enable keyboard shortcuts for navigation
+			overview: true,    // Enable slide overview (press 'Esc')
+			center: true,    // Vertical centering of slides
+			touch: true,    // Enables touch navigation on devices
+			loop: false,   // Loop the presentation
+			rtl: false,   // Right-to-left presentation support
+			shuffle: false,   // Randomizes slide order
+			fragments: true,    // Step through fragments (bullet points, etc.)
+			embedded: false,   // Is this presentation embedded in another page?
+			help: true,    // Show keyboard shortcuts help overlay (press '?')
+
+			// autoSlide: 5000,   // Automatically advance slides (ms)
+			// autoSlideStoppable: true, // Stop auto-sliding on user input
+
+			// Parallax background image
+			// parallaxBackgroundImage: '', // e.g. "'/background1.jpg'"
+			// parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+			// parallaxBackgroundHorizontal: null,
+			// parallaxBackgroundVertical: null,
+
+			// Plugins
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax3]
+		});
+	</script>
+</body>
+
+</html>
