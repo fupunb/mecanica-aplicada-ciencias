@@ -1,2 +1,2 @@
-# mecanica-aplicada
-FUP0407 - Mecânica Aplicada às Ciências 
+# Mecânica Aplicada 
+Repositório de suporte à disciplina Mecânica Aplicada às Ciências (FUP0407).
