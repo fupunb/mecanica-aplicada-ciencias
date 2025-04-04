@@ -1,8 +1,8 @@
 {
-  scripts {
-    build node build-index.js
+  "scripts": {
+    "build": "node build-index.js"
   },
-  dependencies {
-    jsdom ^21.1.0
+  "dependencies": {
+    "jsdom": "^21.1.0"
   }
 }
