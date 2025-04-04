@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<meta name="description" content="Slides, Notas de Aula">
+	<meta name="keywords" content="Slides, Notas de Aula, Física, Mecânica, Ciências, UnB">
+	<meta name="author" content="Bernhard Enders">
+
+	<title>Conversão de Unidades</title>
+
+	<!-- Reveal.js CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reset.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.css">
+
+	<!-- Theme -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/monokai.min.css">
+
+	<!-- Google fonts preconnect -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<!-- Our custom styles -->
+	<link href="./assets/css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<div class="slides">
+
+			<!-- NEW SLIDE -->
+			<section data-background-opacity="0.80" data-background-size="contain"
+				data-background-image="./assets/img/logos/logo_unb.webp">
+				<!-- Universidade | Faculdade | Departamento  -->
+				<h3 style="margin-top: 10%;"><strong>Universidade de Brasília</strong></h3>
+				<h3>Faculdade UnB Planaltina</h3>
+				<!-- disciplina -->
+				<h4 style="margin-top: 5%;">FUP0407: - Mecânica Aplicada às Ciências</h4>
+				<!-- assunto -->
+				<h4 style="margin-top: 5%;">Tema: Conversão de Unidades</h4>
+				<!-- professor -->
+				<div class="small-text" style="margin-top: 5%;">
+					<div><img src="https://gravatar.com/avatar/60d294c6125ae4f5859f4b229249ec06?size=500" alt="avatar"
+							width="64px" style="vertical-align: middle;"><em>Prof. Bernhard G. Enders</em></div>
+				</div>
+			</section>
+
+			<!-- NEW SLIDE - Introduction -->
+			<section data-header="Conversão de Unidades">
+				<section>
+					<ul>
+						<li class="fragment">
+							Frequentemente, precisamos expressar uma grandeza física medida em uma unidade em termos de
+							outra unidade.
+						</li>
+						<li class="fragment">
+							<span class="spaced-small-caps">Conversão de Unidades</span> é o processo de mudar a unidade de
+							medida de uma quantidade sem alterar seu valor.
+						</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>
+							<span class="spaced-small-caps">Conversão de Unidades</span> é essencial para:
+							<ul>
+								<li>Garantir a consistência em cálculos.</li>
+								<li>Comparar grandezas expressas em unidades diferentes.</li>
+								<li>Utilizar fórmulas que exigem unidades específicas (e.g. SI).</li>
+							</ul>
+						</li>
+						<li class="fragment">
+							Baseia-se no princípio de multiplicar por fatores de conversão que são equivalentes a 1.
+						</li>
+					</ul>
+				</section>
+			</section>
+
+			<!-- NEW SLIDE - Conclusion -->
+			<section data-header="Importância da Conversão Correta">
+				<ul>
+					<li class="fragment">Erros na conversão de unidades podem levar a resultados drasticamente
+						incorretos em cálculos científicos e de engenharia.</li>
+					<li class="fragment">Exemplo histórico: Perda da sonda <em>Mars Climate Orbiter</em> em 1999 devido a uma
+						confusão entre unidades imperiais e métricas.</li>
+					<li class="fragment">Dominar a conversão de unidades e o uso de prefixos SI é fundamental para o
+						sucesso em ciências e engenharia.</li>
+				</ul>
+			</section>
+
+			<!-- NEW SLIDE -->
+			<section data-header="Sistema Internacional (SI)">
+				<ul>
+					<li>
+						O Sistema Internacional de Unidades (SI) é o sistema de unidades mais utilizado na ciência.
+					</li>
+					<li class="fragment">As unidades fundamentais do SI são:</li>
+					<div class="fragment" style="font-size: .6em;">
+						<table class="align-left" style="width: 75%; border-collapse: collapse; text-align: left;">
+							<thead style="font-weight: bold; border-bottom: 2px solid #ddd;">
+								<tr>
+									<th>Unidade</th>
+									<th>Símbolo</th>
+									<th>Grandeza</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr style="border-bottom: 2px solid #ddd;">
+									<td>metro</td>
+									<td>m</td>
+									<td>comprimento</td>
+								</tr>
+								<tr style="background-color: #808080; border-bottom: 2px solid #ddd;">
+									<td>quilograma</td>
+									<td>kg</td>
+									<td>massa</td>
+								</tr>
+								<tr style="border-bottom: 2px solid #ddd;">
+									<td>kelvin</td>
+									<td>K</td>
+									<td>temperatura</td>
+								</tr>
+								<tr style="background-color: #808080; border-bottom: 2px solid #ddd;">
+									<td>segundo</td>
+									<td>s</td>
+									<td>tempo</td>
+								</tr>
+								<tr style="border-bottom: 2px solid #ddd;">
+									<td>candela</td>
+									<td>cd</td>
+									<td>intensidade luminosa</td>
+								</tr>
+								<tr style="background-color: #808080; border-bottom: 2px solid #ddd;">
+									<td>mol</td>
+									<td>mol</td>
+									<td>quantidade de matéria</td>
+								</tr>
+								<tr style="border-bottom: 2px solid #ddd;">
+									<td>ampere</td>
+									<td>A</td>
+									<td>corrente elétrica</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					</li>
+				</ul>
+			</section>
+
+
+			<!-- NEW SLIDE -->
+			<section data-header="Prefixos: Múltiplos">
+				<ul>
+					<li>
+						Os prefixos de unidades permitem expressar valores muito grandes ou muito pequenos de forma mais
+						conveniente.
+					<li class="fragment">
+						Os principais múltiplos são:
+						<div style="font-size: .6em;">
+							<table class="align-left" style="width: 75%; border-collapse: collapse; text-align: left;">
+								<thead style="font-weight: bold; border-bottom: 2px solid #ddd;">
+									<tr>
+										<th style="padding: 8px;">Nome</th>
+										<th style="padding: 8px;">Símbolo</th>
+										<th style="padding: 8px;">Valor</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr style="border-bottom: 2px solid #ddd;">
+										<td>deca</td>
+										<td>da</td>
+										<td>10¹</td>
+									</tr>
+									<tr style="background-color: #808080; border-bottom: 2px solid #ddd;">
+										<td>hecto</td>
+										<td>h</td>
+										<td>10²</td>
+									</tr>
+									<tr style="border-bottom: 2px solid #ddd;">
+										<td>quilo</td>
+										<td>k</td>
+										<td>10³</td>
+									</tr>
+									<tr style="background-color: #808080; border-bottom: 2px solid #ddd;">
+										<td>mega</td>
+										<td>M</td>
+										<td>10⁶</td>
+									</tr>
+									<tr style="border-bottom: 2px solid #ddd;">
+										<td>giga</td>
+										<td>G</td>
+										<td>10⁹</td>
+									</tr>
+									<tr style="background-color: #808080; border-bottom: 2px solid #ddd;">
+										<td>tera</td>
+										<td>T</td>
+										<td>10$^{12}$</td>
+									</tr>
+									<tr style="border-bottom: 2px solid #ddd;">
+										<td>peta</td>
+										<td>P</td>
+										<td>10$^{15}$</td>
+									</tr>
+									<tr style="background-color: #808080; border-bottom: 2px solid #ddd;">
+										<td>exa</td>
+										<td>E</td>
+										<td>10$^{18}$</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+				</ul>
+			</section>
+
+			<!-- NEW SLIDE -->
+			<section data-header="Prefixos: Submúltiplos">
+				<ul>
+					<li>
+						Principais submúltiplos (para valores menores que a unidade):
+						<div class="fragment" style="font-size: .6em;">
+							<table class="align-left" style="width: 75%; border-collapse: collapse; text-align: left;">
+								<thead style="font-weight: bold; border-bottom: 2px solid #ddd;">
+									<tr>
+										<th style="padding: 8px;">Nome</th>
+										<th style="padding: 8px;">Símbolo</th>
+										<th style="padding: 8px;">Valor</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr style="border-bottom: 2px solid #ddd;">
+										<td>deci</td>
+										<td>d</td>
+										<td>10$^{-1}$</td>
+									</tr>
+									<tr style="background-color: #808080; border-bottom: 2px solid #ddd;">
+										<td>centi</td>
+										<td>c</td>
+										<td>10$^{-2}$</td>
+									</tr>
+									<tr style="border-bottom: 2px solid #ddd;">
+										<td>mili</td>
+										<td>m</td>
+										<td>10$^{-3}$</td>
+									</tr>
+									<tr style="background-color: #808080; border-bottom: 2px solid #ddd;">
+										<td>micro</td>
+										<td>μ</td>
+										<td>10$^{-6}$</td>
+									</tr>
+									<tr style="border-bottom: 2px solid #ddd;">
+										<td>nano</td>
+										<td>n</td>
+										<td>10$^{-9}$</td>
+									</tr>
+									<tr style="background-color: #808080; border-bottom: 2px solid #ddd;">
+										<td>pico</td>
+										<td>p</td>
+										<td>10$^{-12}$</td>
+									</tr>
+									<tr style="border-bottom: 2px solid #ddd;">
+										<td>femto</td>
+										<td>f</td>
+										<td>10$^{-15}$</td>
+									</tr>
+									<tr style="background-color: #808080; border-bottom: 2px solid #ddd;">
+										<td>atto</td>
+										<td>a</td>
+										<td>10$^{-18}$</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+				</ul>
+			</section>
+
+			<!-- NEW SLIDE - Conversion Factors -->
+			<section data-header="Fatores de Conversão">
+				<ul>
+					<li>
+						A conversão é feita usando <span class="spaced-small-caps">Fatores de Conversão</span>.
+					</li>
+					<li class="fragment">
+						Um fator de conversão é uma fração onde o numerador e o denominador são quantidades iguais
+						expressas em unidades diferentes.
+						<div class="white-frame">
+							Exemplo: $1 \text{ min} = 60 \text{ s}$ <br>
+							Fatores: $\left( \frac{1 \text{ min}}{60 \text{ s}} \right) = 1$ ou $\left( \frac{60 \text{
+							s}}{1 \text{ min}} \right) = 1$
+						</div>
+					</li>
+					<li class="fragment">
+						Multiplicar uma grandeza por um fator de conversão (que é igual a 1) muda de unidade.
+					</li>
+				</ul>
+			</section>
+
+			<!-- NEW SLIDE -->
+			<section data-header="Método de Conversão">
+				<ul>
+					<li>
+						A conversão de unidades é baseada no princípio de que multiplicar por um fator de conversão igual a 1 não
+						altera o valor da grandeza.
+						<div class=" fragment white-frame align-left">
+							fator de conversão = $\frac{\text{unidade desejada}}{\text{unidade original}}$ = 1
+						</div>
+					</li>
+					<li class="fragment">
+						Exemplo: Conversão de 5 km para metros.
+						<div class="white-frame">
+							5 km = 5 km × $\left(\frac{1000 \text{ m}}{1 \text{ km}}\right)$ = 5000 m
+						</div>
+					</li>
+				</ul>
+			</section>
+
+			<section data-header="Conversões Encadeadas">
+				<ul>
+					<li>
+						Para conversões mais complexas, podemos encadear fatores de conversão:
+						<div class="white-frame">
+							\[\begin{aligned}
+							\rm 72\,km/h &= \rm 72\,km/h \times \left(\frac{1000\,\text{m}}{1\,\text{km}}\right) \times
+							\left(\frac{1\,\text{h}}{3600\,\text{s}}\right) \\
+							&= 20\rm\,m/s
+							\end{aligned}\]
+						</div>
+					</li>
+				</ul>
+			</section>
+
+			<!-- NEW SLIDE -->
+			<section data-header="Conversões com Expoentes">
+				<ul>
+					<li>
+						Quando precisamos converter unidades derivadas, como área, volume ou densidade, devemos considerar os
+						expoentes.
+						<div class="white-frame">
+							\[\begin{aligned}
+							1\,\text{g/cm}^3 &= 1\,\frac{\text{g}}{\text{cm}^3} \times
+							\left(\frac{1\,\text{kg}}{1000\,\text{g}}\right) \times \left(\frac{100\,\text{cm}}{1\,\text{m}}\right)^3
+							\\
+							& = 1000\,\text{kg/m}^3
+							\end{aligned}\]
+						</div>
+					</li>
+				</ul>
+			</section>
+
+			<!-- NEW SLIDE -->
+			<section data-header="Conversão com Prefixos">
+				<ul>
+					<li>Vamos converter 4,7 GHz para Hz:
+						<div class="fragment white-frame">
+							4,7 GHz = 4,7 × 10⁹ Hz = 4.700.000.000 Hz
+						</div>
+					</li>
+					<li class="fragment">
+						Convertendo 250 nm para metros:
+						<div class="white-frame">
+							250 nm = 250 × 10⁻⁹ m = 2,5 × 10⁻⁷ m
+						</div>
+					</li>
+					<li class="fragment">
+						Convertendo 3,5 mg para kg:
+						<div class="white-frame">
+							3,5 mg = 3,5 × 10⁻³ g = 3,5 × 10⁻⁶ kg
+						</div>
+					</li>
+				</ul>
+			</section>
+
+			<!-- NEW SLIDE -->
+			<section data-header="Conversões entre Sistemas de Unidades">
+				<section>
+					<ul>
+						<li class="fragment">
+							Além do SI, existem outros sistemas de unidades, como o sistema CGS (centímetro-grama-segundo) e o sistema
+							imperial (polegadas, pés, libras).
+						</li>
+						<li class="fragment">
+							Exemplos de fatores de conversão comuns:
+							<div class="white-frame align-left">
+								1 polegada = 2,54 cm (exato)<br>
+								1 pé = 0,3048 m (exato)<br>
+								1 milha = 1,60934 km<br>
+								1 libra = 0,45359237 kg (exato)
+							</div>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li><em>Exemplo:</em> Converter 65 milhas por hora para metros por segundo:</li>
+						<div class="fragment white-frame">
+							\[\begin{aligned}
+							65 \, \text{mi/h} &= 65 \, \text{mi/h} \times \frac{1,60934 \, \text{km}}{1 \, \text{mi}} \times
+							\frac{1000 \, \text{m}}{1 \, \text{km}} \times \frac{1 \, \text{h}}{3600 \, \text{s}} \\
+							&= 65 \times 1,60934 \times 1000 \times \frac{1}{3600} \, \text{m/s} \\
+							&= 29,1 \, \text{m/s}
+							\end{aligned}\]
+						</div>
+					</ul>
+				</section>
+			</section>
+
+			<!-- NEW SLIDE -->
+			<section data-header="Dicas para Conversão de Unidades">
+				<ul>
+					<li>
+						Sempre verifique se as unidades se cancelam corretamente.
+					</li>
+					<li class="fragment">
+						Mantenha o controle das potências de 10 ao trabalhar com prefixos.
+					</li>
+					<li class="fragment">
+						Para conversões complexas, divida o problema em etapas mais simples.
+					</li>
+					<li class="fragment">
+						Memorize os fatores de conversão mais comuns para agilizar os cálculos.
+					</li>
+				</ul>
+			</section>
+
+			<section data-header="Exercício Proposto">
+				<p>O Arenque é um tipo de peixe abundante no Atlântico Norte. O cran é uma unidade de volume britânica para
+					arenques frescos: 1 cran = 170,474 litros (L) de arenque, cerca de 750 arenques. Suponha que, para liberação
+					pela alfândega da Arábia Saudita, um carregamento de 1255 crans deva ser declarado em termos de covidos³,
+					onde o covido é uma unidade de comprimento árabe: 1 covido³ = 112398,87 cm³ . (lembre-se que 1 L = 1000 cm³ ).
+					O
+					volume, em covidos³, a ser declarado é igual a quanto?</p>
+			</section>
+
+		</div><!-- End of slides -->
+
+	</div><!-- End of reveal -->
+
+	<!-- Reveal.js Core JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.js"></script>
+
+	<!-- Reveal.js Plugins (optional) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/zoom/zoom.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/notes/notes.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/search/search.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/markdown/markdown.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/highlight/highlight.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/math/math.min.js"></script>
+
+	<script>
+		Reveal.initialize({
+			hash: true,     // Add slide hashes to the URL
+			controls: true,     // Display controls in the bottom right corner
+			progress: true,     // Display a presentation progress bar
+			slideNumber: 'c/t',   // Display the current slide number (false, c/t, h/v, h.v, c)
+			navigationMode: 'linear',    // Navigation mode (default, linear, grid)
+			history: true,     // Push each slide change to the browser history
+			keyboard: true,     // Enable keyboard shortcuts for navigation
+			overview: true,     // Enable slide overview (press 'Esc')
+			center: false,     // Vertical centering of slides
+			touch: true,     // Enables touch navigation on devices
+			loop: false,    // Loop the presentation
+			fragments: true,     // Step through fragments (bullet points, etc.)
+			embedded: false,    // Is this presentation embedded in another page?
+			help: true,     // Show keyboard shortcuts help overlay (press '?')
+			autoAnimate: true, // Enable auto-animate transitions
+			autoAnimateEasing: 'ease',
+			backgroundTransition: 'concave',   // Transition between slides (none, fade, slide, convex, concave, zoom)
+			transition: 'concave',    // Transition between slides (default, fade, slide, convex, concave, zoom)
+			transitionSpeed: 'slow',    // Transition speed (default, fast, slow)
+			parallaxBackgroundImage: './assets/img/backgrounds/particle-physics-parallax.webp',
+			//parallaxBackgroundSize: '5120px 2880px',
+			parallaxBackgroundHorizontal: 200,
+			parallaxBackgroundVertical: 100,
+			// Plugins
+			plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath.KaTeX]
+		});
+	</script>
+
+</body>
+
+</html>

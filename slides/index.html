@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<meta name="description" content="Slides, Notas de Aula">
+	<meta name="keywords" content="Slides, Notas de Aula, Física, Mecânica, Ciências, UnB">
+	<meta name="author" content="Bernhard Enders">
+
+	<title>Análise Dimensional</title>
+
+	<!-- Reveal.js CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reset.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.css">
+
+	<!-- Theme -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/monokai.min.css">
+
+	<!-- Google fonts preconnect -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<!-- Our custom styles -->
+	<link href="./assets/css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<div class="slides">
+
+			<!-- NEW SLIDE -->
+			<section data-background-opacity="0.80" data-background-size="contain"
+				data-background-image="./assets/img/logos/logo_unb.webp">
+				<!-- Universidade | Faculdade | Departamento  -->
+				<h3 style="margin-top: 10%;"><strong>Universidade de Brasília</strong></h3>
+				<h3>Faculdade UnB Planaltina</h3>
+				<!-- disciplina -->
+				<h4 style="margin-top: 5%;">FUP0407 - Mecânica Aplicada às Ciências</h4>
+				<!-- professor -->
+				<div class="small-text" style="margin-top: 5%;">
+					<div><img src="https://gravatar.com/avatar/60d294c6125ae4f5859f4b229249ec06?size=500" alt="avatar"
+							width="64px" style="vertical-align: middle;"><em>Prof. Bernhard G. Enders</em></div>
+				</div>
+			</section>
+
+			<!-- NEW SLIDE -->
+			<section data-header="Índice">
+				<ol>
+					<li>
+						<a href="./conversão-unidades.html">Conversão de Unidades</a>
+					</li>
+					<li>
+						<a href="./análise-dimensional.html">Análise Dimensional</a>
+					</li>
+				</ol>
+			</section>
+
+		</div><!-- End of slides -->
+
+	</div><!-- End of reveal -->
+
+	<!-- Reveal.js Core JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.js"></script>
+
+	<!-- Reveal.js Plugins (optional) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/zoom/zoom.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/notes/notes.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/search/search.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/markdown/markdown.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/highlight/highlight.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/math/math.min.js"></script>
+
+	<script>
+		Reveal.initialize({
+			hash: true,     // Add slide hashes to the URL
+			controls: true,     // Display controls in the bottom right corner
+			progress: true,     // Display a presentation progress bar
+			slideNumber: 'c/t',   // Display the current slide number (false, c/t, h/v, h.v, c)
+			navigationMode: 'linear',    // Navigation mode (default, linear, grid)
+			history: true,     // Push each slide change to the browser history
+			keyboard: true,     // Enable keyboard shortcuts for navigation
+			overview: true,     // Enable slide overview (press 'Esc')
+			center: false,     // Vertical centering of slides
+			touch: true,     // Enables touch navigation on devices
+			loop: false,    // Loop the presentation
+			fragments: true,     // Step through fragments (bullet points, etc.)
+			embedded: false,    // Is this presentation embedded in another page?
+			help: true,     // Show keyboard shortcuts help overlay (press '?')
+			autoAnimate: true, // Enable auto-animate transitions
+			autoAnimateEasing: 'ease',
+			backgroundTransition: 'concave',   // Transition between slides (none, fade, slide, convex, concave, zoom)
+			transition: 'concave',    // Transition between slides (default, fade, slide, convex, concave, zoom)
+			transitionSpeed: 'slow',    // Transition speed (default, fast, slow)
+			parallaxBackgroundImage: './assets/img/backgrounds/galaxy_9883.webp',
+			//parallaxBackgroundSize: '5120px 2880px',
+			parallaxBackgroundHorizontal: 200,
+			parallaxBackgroundVertical: 100,
+			// Plugins
+			plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath.KaTeX]
+		});
+	</script>
+
+</body>
+
+</html>
