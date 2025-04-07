@@ -41,6 +41,10 @@
     text-align: left;
 }
 
+.centered {
+    text-align: center !important;
+}
+
 /* More space between list items */
 .reveal ul>li {
     margin-bottom: 1ex;

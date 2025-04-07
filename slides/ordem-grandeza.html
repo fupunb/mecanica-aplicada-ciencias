@@ -11,7 +11,7 @@
 	<meta name="keywords" content="Slides, Notas de Aula, Física, Mecânica, Ciências, UnB">
 	<meta name="author" content="Bernhard Enders">
 
-	<title>Algarismos Significativos e Ordem de Grandeza</title>
+	<title>Ordem de Grandeza</title>
 
 	<!-- Reveal.js CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reset.min.css">
@@ -46,73 +46,12 @@
 				<!-- disciplina -->
 				<h4 style="margin-top: 5%;">FUP0407 - Mecânica Aplicada às Ciências</h4>
 				<!-- Assunto -->
-				<h4 style="margin-top: 5%;">Algarismos Significativos / Ordem de Grandeza</h4>
+				<h4 style="margin-top: 5%;">Tema: Ordem de Grandeza</h4>
 				<!-- professor -->
 				<div class="small-text" style="margin-top: 5%;">
 					<div><img src="https://gravatar.com/avatar/60d294c6125ae4f5859f4b229249ec06?size=500" alt="avatar"
 							width="64px" style="vertical-align: middle;"><em>Prof. Bernhard G. Enders</em></div>
 				</div>
-			</section>
-
-			<!-- NEW SLIDE -->
-			<section data-header="Algarismos Significativos">
-				<ul>
-					<li class="fragment">Os algarismos significativos são os dígitos que expressam a precisão de uma medida.</li>
-					<li class="fragment">O número de algarismos significativos depende da precisão do instrumento de medida.</li>
-					<li class="fragment"><em>Exemplos:</em>
-						<div class="white-frame">2,50 m tem 3 algarismos significativos<br>
-							2,503 m tem 4 algarismos significativos<br>
-							2500 mm tem 2 algarismos significativos
-						</div>
-					</li>
-				</ul>
-			</section>
-
-			<!-- NEW SLIDE -->
-			<section data-header="Regras para Algarismos Significativos">
-				<section>
-					<ul>
-						<li>Quando multiplicando ou dividindo quantidades, o número de algarismos significativos na resposta final
-							não deve exceder o número de algarismos significativos da quantidade com menos algarismos significativos.
-						</li>
-						<li class="fragment">Exemplo: $r = 8 \, \text{m}$ (1 algarismo significativo), $A = \pi r^2 = 201{,}0619298
-							\,
-							\text{m}^2$ deve ser arredondado para $A = 200 \, \text{m}^2$ (1 algarismo significativo).</li>
-					</ul>
-				</section>
-				<section>
-					<ul>
-						<li>Quando somando ou subtraindo quantidades, o número de casas decimais na resposta deve ser igual ao da
-							quantidade com menos casas decimais.</li>
-						<li class="fragment">Exemplo: $1,21342 - 1,040 = 0,17342$ deve ser arredondado para $0,173$ (3 casas
-							decimais).</li>
-					</ul>
-				</section>
-			</section>
-
-			<!-- NEW SLIDE -->
-			<section data-header="Notação Científica">
-				<ul>
-					<li class="fragment">A notação científica é usada para expressar números muito grandes ou muito pequenos.</li>
-					<li class="fragment">Exemplo: $12000000 = 1,2 \times 10^7$; $0,00000001 = 1 \times 10^{-8}$.</li>
-					<li class="fragment">Facilita a identificação do número de algarismos significativos.</li>
-				</ul>
-			</section>
-
-			<!-- NEW SLIDE -->
-			<section data-header="Operações com Notação Científica">
-				<section>
-					<ul>
-						<li>Multiplicação e divisão: somam-se ou subtraem-se os expoentes.</li>
-						<li class="fragment">Exemplo: $10^2 \times 10^3 = 10^{2+3} = 10^5$.</li>
-					</ul>
-				</section>
-				<section>
-					<ul>
-						<li>Adição e subtração: os expoentes devem ser iguais.</li>
-						<li class="fragment">Exemplo: $(1,200 \times 10^2) + (8 \times 10^{-1}) = 120,0 + 0,8 = 120,8$.</li>
-					</ul>
-				</section>
 			</section>
 
 			<!-- NEW SLIDE -->
@@ -177,6 +116,164 @@
 					<li class="fragment">Cálculo: $N = \frac{V_{\text{praia}}}{V_{\text{grão}}} = \frac{500 \times 100 \times
 						3}{\frac{4}{3}\pi (0,5 \times 10^{-3})^3} \approx 3 \times 10^{14}$ grãos.</li>
 				</ul>
+			</section>
+
+			<!-- NEW SLIDE -->
+			<section data-header="Ordem de Grandeza">
+				<section>
+					<ul>
+						<li>Em cálculos aproximados, às vezes arredondamos um número para a <span class="underline">potência de 10
+								mais próxima</span>. Isso é a <span class="spaced-small-caps">ordem de grandeza</span>.</li>
+						<li class="fragment">Símbolo: $\sim$ (significa "é da ordem de grandeza de").</li>
+						<li class="fragment">Exemplos:
+							<div class="white-frame">
+								Altura de uma formiga: $8 \times 10^{-4} \text{ m} \approx 10^{-3} \text{ m}$. Ordem de grandeza:
+								$10^{-3}$ m.<br>
+								Altura humana: $h \approx 2 \text{ m}$. Como 2 está mais perto de $10^0 (=1)$ do que de $10^1 (=10)$, $h
+								\sim 10^0 \text{ m}$.
+							</div>
+						</li>
+					</ul>
+				</section>
+				<!-- VERTICAL SLIDE -->
+				<section>
+					<h4>Significado e Comparação</h4>
+					<ul>
+						<li>Dizer $h \sim 10^0$ m não significa que a altura é 1 m, mas que está mais próxima de 1 m do que de 10 m
+							ou 0,1 m.</li>
+						<li class="fragment">Podemos dizer que um ser humano é <span class="underline">três ordens de
+								grandeza</span> mais alto que uma formiga ($10^0$ m vs $10^{-3}$ m), significando que a razão das
+							alturas é cerca de $10^3 = 1000$.</li>
+						<li class="fragment">Uma ordem de grandeza <span class="underline">não fornece algarismos
+								significativos</span>; é apenas uma estimativa grosseira.</li>
+					</ul>
+				</section>
+				<!-- VERTICAL SLIDE -->
+				<section>
+					<h4>Questões de Fermi</h4>
+					<ul>
+						<li>A ordem de grandeza pode ser estimada usando suposições plausíveis e cálculos simples.</li>
+						<li class="fragment">O físico Enrico Fermi era mestre em estimativas de ordem de grandeza para responder a
+							perguntas que pareciam impossíveis de calcular por falta de informação.</li>
+						<li class="fragment">Esses problemas são chamados de <span class="spaced-small-caps">Questões de
+								Fermi</span>.</li>
+					</ul>
+				</section>
+				<!-- VERTICAL SLIDE -->
+				<section>
+					<h4>Exemplo de Fermi: Desgaste de Pneu</h4>
+					<p>Qual a espessura de borracha desgastada do pneu do seu carro ao percorrer 1 km?
+					</p>
+					<ul>
+						<li class="fragment"><strong>Suposições:</strong>
+							<ul>
+								<li>Espessura do piso novo $\approx 1 \text{ cm} = 10^{-2} \text{ m}$.</li>
+								<li>Vida útil do pneu $\approx 60.000 \text{ km} = 6 \times 10^7 \text{ m}$.</li>
+								<li>O piso se desgasta completamente na vida útil.</li>
+							</ul>
+						</li>
+						<li class="fragment"><strong>Cálculo (Ordem de Grandeza):</strong>
+							<div class="white-frame">
+								Taxa de desgaste $\approx \frac{10^{-2} \text{ m}}{6 \times 10^7 \text{ m}} \approx \frac{1}{6} \times
+								10^{-9} \approx 10^{-10}$ (sem unidade) <br>
+								Desgaste por 1 km ($10^3$ m) $\approx 10^{-10} \times 10^3 \text{ m} = 10^{-7} \text{ m}$
+							</div>
+						</li>
+						<li class="fragment">Resposta: A ordem de grandeza do desgaste é $10^{-7}$ m por km. (Cálculo mais preciso
+							no livro: $2 \times 10^{-7}$ m).</li>
+					</ul>
+				</section>
+				<!-- VERTICAL SLIDE -->
+				<section>
+					<h4>Exemplo de Fermi: Grãos de Areia</h4>
+					<p>Estime o número de grãos de areia em uma praia.</p>
+					<ul>
+						<li class="fragment"><strong>Suposições (Exemplo):</strong>
+							<ul>
+								<li>Praia: 500 m comprimento, 100 m largura, 3 m profundidade. Volume $\approx 1,5 \times 10^5 \text{
+									m}^3 \sim 10^5 \text{ m}^3$.</li>
+								<li>Grão: Esfera com diâmetro 1 mm ($10^{-3}$ m), raio $0,5 \times 10^{-3}$ m. Volume $\approx
+									\frac{4}{3}\pi (0,5 \times 10^{-3})^3 \approx 0,5 \times 10^{-9} \text{ m}^3 \sim 10^{-9} \text{
+									m}^3$.</li>
+							</ul>
+						</li>
+						<li class="fragment"><strong>Cálculo (Ordem de Grandeza):</strong>
+							<div class="white-frame">
+								Número de grãos $N \approx \frac{\text{Volume da Praia}}{\text{Volume do Grão}} \approx \frac{10^5
+								\text{ m}^3}{10^{-9} \text{ m}^3} = 10^{14}$
+							</div>
+						</li>
+						<li class="fragment">Resposta: A ordem de grandeza é $10^{14}$ grãos. (Cálculo mais preciso no livro: $3
+							\times 10^{14}$).</li>
+					</ul>
+				</section>
+				<!-- VERTICAL SLIDE -->
+				<section>
+					<h4>Universo por Ordens de Grandeza (Tabela 1-3)</h4>
+					<p>A Tabela 1-3 no livro fornece valores de ordem de grandeza para várias grandezas físicas:</p>
+					<div class="white-frame small-text">
+						<table>
+							<thead>
+								<tr>
+									<th>Grandeza</th>
+									<th>Tamanho (m)</th>
+									<th>Massa (kg)</th>
+									<th>Tempo (s)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Próton</td>
+									<td>$10^{-15}$</td>
+									<td>$10^{-27}$</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>Átomo</td>
+									<td>$10^{-10}$</td>
+									<td>-</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>Vírus</td>
+									<td>$10^{-7}$</td>
+									<td>$10^{-19}$</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>Ser Humano</td>
+									<td>$10^{0}$</td>
+									<td>$10^{2}$</td>
+									<td>Batimento Cardíaco $10^0$</td>
+								</tr>
+								<tr>
+									<td>Terra</td>
+									<td>$10^{7}$</td>
+									<td>$10^{24}$</td>
+									<td>Rotação $10^5$, Revolução $10^7$</td>
+								</tr>
+								<tr>
+									<td>Sol</td>
+									<td>$10^{9}$</td>
+									<td>$10^{30}$</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>Via Láctea</td>
+									<td>$10^{21}$</td>
+									<td>$10^{41}$</td>
+									<td>-</td>
+								</tr>
+								<tr>
+									<td>Universo Visível</td>
+									<td>$10^{26}$</td>
+									<td>$10^{52}$</td>
+									<td>Idade $10^{18}$</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</section>
 			</section>
 
 		</div><!-- End of slides -->
