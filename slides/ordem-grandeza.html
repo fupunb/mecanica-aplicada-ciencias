@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<meta name="description" content="Slides, Notas de Aula">
+	<meta name="keywords" content="Slides, Notas de Aula, Física, Mecânica, Ciências, UnB">
+	<meta name="author" content="Bernhard Enders">
+
+	<title>Algarismos Significativos e Ordem de Grandeza</title>
+
+	<!-- Reveal.js CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reset.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.css">
+
+	<!-- Theme -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/monokai.min.css">
+
+	<!-- Google fonts preconnect -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	<!-- Our custom styles -->
+	<link rel="stylesheet" href="https://mecanica-aplicada-ciencias.netlify.app/assets/css/custom.css">
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<div class="slides">
+
+			<!-- NEW SLIDE -->
+			<section data-background-opacity="0.80" data-background-size="contain"
+				data-background-image="https://raw.githubusercontent.com/fupunb/mecanica-aplicada-ciencias/refs/heads/main/slides/assets/img/logos/logo_unb.webp">
+				<!-- Universidade | Faculdade | Departamento  -->
+				<h3 style="margin-top: 10%;"><strong>Universidade de Brasília</strong></h3>
+				<h3>Faculdade UnB Planaltina</h3>
+				<!-- disciplina -->
+				<h4 style="margin-top: 5%;">FUP0407 - Mecânica Aplicada às Ciências</h4>
+				<!-- Assunto -->
+				<h4 style="margin-top: 5%;">Algarismos Significativos / Ordem de Grandeza</h4>
+				<!-- professor -->
+				<div class="small-text" style="margin-top: 5%;">
+					<div><img src="https://gravatar.com/avatar/60d294c6125ae4f5859f4b229249ec06?size=500" alt="avatar"
+							width="64px" style="vertical-align: middle;"><em>Prof. Bernhard G. Enders</em></div>
+				</div>
+			</section>
+
+			<!-- NEW SLIDE -->
+			<section data-header="Algarismos Significativos">
+				<ul>
+					<li class="fragment">Os algarismos significativos são os dígitos que expressam a precisão de uma medida.</li>
+					<li class="fragment">O número de algarismos significativos depende da precisão do instrumento de medida.</li>
+					<li class="fragment"><em>Exemplos:</em>
+						<div class="white-frame">2,50 m tem 3 algarismos significativos<br>
+							2,503 m tem 4 algarismos significativos<br>
+							2500 mm tem 2 algarismos significativos
+						</div>
+					</li>
+				</ul>
+			</section>
+
+			<!-- NEW SLIDE -->
+			<section data-header="Regras para Algarismos Significativos">
+				<section>
+					<ul>
+						<li>Quando multiplicando ou dividindo quantidades, o número de algarismos significativos na resposta final
+							não deve exceder o número de algarismos significativos da quantidade com menos algarismos significativos.
+						</li>
+						<li class="fragment">Exemplo: $r = 8 \, \text{m}$ (1 algarismo significativo), $A = \pi r^2 = 201{,}0619298
+							\,
+							\text{m}^2$ deve ser arredondado para $A = 200 \, \text{m}^2$ (1 algarismo significativo).</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>Quando somando ou subtraindo quantidades, o número de casas decimais na resposta deve ser igual ao da
+							quantidade com menos casas decimais.</li>
+						<li class="fragment">Exemplo: $1,21342 - 1,040 = 0,17342$ deve ser arredondado para $0,173$ (3 casas
+							decimais).</li>
+					</ul>
+				</section>
+			</section>
+
+			<!-- NEW SLIDE -->
+			<section data-header="Notação Científica">
+				<ul>
+					<li class="fragment">A notação científica é usada para expressar números muito grandes ou muito pequenos.</li>
+					<li class="fragment">Exemplo: $12000000 = 1,2 \times 10^7$; $0,00000001 = 1 \times 10^{-8}$.</li>
+					<li class="fragment">Facilita a identificação do número de algarismos significativos.</li>
+				</ul>
+			</section>
+
+			<!-- NEW SLIDE -->
+			<section data-header="Operações com Notação Científica">
+				<section>
+					<ul>
+						<li>Multiplicação e divisão: somam-se ou subtraem-se os expoentes.</li>
+						<li class="fragment">Exemplo: $10^2 \times 10^3 = 10^{2+3} = 10^5$.</li>
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li>Adição e subtração: os expoentes devem ser iguais.</li>
+						<li class="fragment">Exemplo: $(1,200 \times 10^2) + (8 \times 10^{-1}) = 120,0 + 0,8 = 120,8$.</li>
+					</ul>
+				</section>
+			</section>
+
+			<!-- NEW SLIDE -->
+			<section data-header="Ordem de Grandeza">
+				<ul>
+					<li class="fragment">A ordem de grandeza é a potência de 10 mais próxima de um número.</li>
+					<li class="fragment">Exemplo: A altura de uma formiga é aproximadamente $10^{-3} \, \text{m}$.</li>
+					<li class="fragment">Usada para estimativas rápidas e simplificadas.</li>
+				</ul>
+			</section>
+
+			<!-- NEW SLIDE -->
+			<section data-header="Exemplos de Ordem de Grandeza">
+				<table>
+					<thead>
+						<tr>
+							<th>Quantidade</th>
+							<th>Ordem de Grandeza</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Altura de uma pessoa</td>
+							<td>$10^0 \, \text{m}$</td>
+						</tr>
+						<tr>
+							<td>Diâmetro de um átomo</td>
+							<td>$10^{-10} \, \text{m}$</td>
+						</tr>
+						<tr>
+							<td>Distância até a estrela mais próxima</td>
+							<td>$10^{16} \, \text{m}$</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<!-- NEW SLIDE -->
+			<section data-header="Problemas de Fermi">
+				<ul>
+					<li class="fragment">Problemas que envolvem estimativas usando ordem de grandeza.</li>
+					<li class="fragment">Exemplo: Estimar o número de grãos de areia em uma praia.</li>
+					<li class="fragment">Exemplo: Estimar a espessura de borracha desgastada de um pneu por km rodado.</li>
+				</ul>
+			</section>
+
+			<!-- NEW SLIDE -->
+			<section data-header="Exemplo: Espessura de Borracha Desgastada">
+				<ul>
+					<li>Assumir que a espessura inicial da banda de rodagem é de 1 cm.</li>
+					<li class="fragment">Assumir que o pneu é trocado após 60000 km.</li>
+					<li class="fragment">Cálculo: $1 \, \text{cm} / 60000 \, \text{km} = 1,7 \times 10^{-5} \, \text{cm/km} = 2
+						\times 10^{-7} \, \text{m/km}$.</li>
+				</ul>
+			</section>
+
+			<!-- NEW SLIDE -->
+			<section data-header="Exemplo: Número de Grãos de Areia">
+				<ul>
+					<li>Assumir que a praia tem 500 m de comprimento, 100 m de largura e 3 m de profundidade.</li>
+					<li class="fragment">Assumir que cada grão de areia tem 1 mm de diâmetro.</li>
+					<li class="fragment">Cálculo: $N = \frac{V_{\text{praia}}}{V_{\text{grão}}} = \frac{500 \times 100 \times
+						3}{\frac{4}{3}\pi (0,5 \times 10^{-3})^3} \approx 3 \times 10^{14}$ grãos.</li>
+				</ul>
+			</section>
+
+		</div><!-- End of slides -->
+
+	</div><!-- End of reveal -->
+
+	<!-- Reveal.js Core JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.js"></script>
+
+	<!-- Reveal.js Plugins (optional) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/zoom/zoom.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/notes/notes.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/search/search.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/markdown/markdown.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/highlight/highlight.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/math/math.min.js"></script>
+
+	<script>
+		Reveal.initialize({
+			hash: true,
+			controls: true,
+			progress: true,
+			slideNumber: 'c/t',
+			navigationMode: 'linear',
+			history: true,
+			keyboard: true,
+			overview: true,
+			center: false,
+			touch: true,
+			loop: false,
+			fragments: true,
+			embedded: false,
+			help: true,
+			autoAnimate: true,
+			autoAnimateEasing: 'ease',
+			backgroundTransition: 'concave',
+			transition: 'concave',
+			transitionSpeed: 'slow',
+			parallaxBackgroundImage: 'https://raw.githubusercontent.com/fupunb/mecanica-aplicada-ciencias/refs/heads/main/slides/assets/img/backgrounds/physics-equations.webp',
+			parallaxBackgroundHorizontal: 200,
+			parallaxBackgroundVertical: 100,
+			plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath.KaTeX]
+		});
+	</script>
+
+</body>
+
+</html>
