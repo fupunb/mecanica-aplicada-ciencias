@@ -71,9 +71,8 @@
 				<section>
 					<ul>
 						<li>Medições possuem incerteza. O número de dígitos usados indica essa incerteza.</li>
-						<li class="fragment"><em>Exemplo:</em> Uma mesa com 2,50 m tem comprimento próximo a 2,50 m. O último dígito
-							(zero) é
-							incerto.</li>
+						<li class="fragment">Uma mesa com 2,50 m tem comprimento próximo a 2,50 m. O último dígito
+							é incerto.</li>
 						<li class="fragment">Se medirmos com mais precisão, podemos usar mais dígitos: 2,503 m.
 						</li>
 						<li class="fragment"><span class="spaced-small-caps">Algarismo Significativo</span>: são os dígitos
@@ -81,44 +80,47 @@
 							segurança (exceto zeros à esquerda usados para posicionar a vírgula).</li>
 					</ul>
 				</section>
-				<!-- VERTICAL SLIDE -->
-				<section>
-					<p>Exemplos de Algarismos Significativos (AS):</p>
-					<div class="white-frame">
-						<ul>
-							<li>2,50 m &rarr; 3 AS</li>
-							<li>2,503 m &rarr; 4 AS</li>
-							<li>0,00130 &rarr; 3 AS (1, 3, 0. Os zeros à esquerda não são significativos)</li>
-							<li>2300, &rarr; 4 AS (a vírgula decimal indica que os zeros são significativos)
-							</li>
-							<li>2300 &rarr; Ambíguo! Pode ter 2, 3 ou 4 AS. Use notação científica para clareza.</li>
-						</ul>
-					</div>
-				</section>
 			</section>
 
+			<section data-header="Exemplos de Algarismos Significativos">
+				<div class="white-frame">
+					<ul>
+						<li>2,50 m &rarr; 3 AS</li>
+						<li>2,503 m &rarr; 4 AS</li>
+						<li>0,00130 &rarr; 3 AS (1, 3, 0. Os zeros à esquerda não são significativos)</li>
+						<li>2300, &rarr; 4 AS (a vírgula decimal indica que os zeros são significativos)
+						</li>
+						<li>2300 &rarr; Ambíguo! Pode ter 2, 3 ou 4 AS. Use notação científica para clareza.</li>
+					</ul>
+				</div>
+			</section>
 
 			<section data-header="Multiplicação e Divisão">
-				<ul>
-					<li>Ao multiplicar ou dividir é importante respeitar a quantidade de algarismos significativos do resultado.
-					</li>
-					<li class="fragment">O número de algarismos significativos no resultado final não deve ser
-						maior que o número de algarismos significativos na quantidade com o <b>menor</b>
-						número de algarismos significativos.</li>
-					<li class="fragment"><em>Exemplo:</em> Área de um círculo com raio $r = 8$ m.
-						<div class="white-frame fragment">
+				<section>
+					<ul>
+						<li>Ao multiplicar ou dividir é importante respeitar a quantidade de algarismos significativos do resultado.
+						</li>
+						<li class="fragment">O número de algarismos significativos no resultado final não deve ser
+							maior que o número de algarismos significativos na quantidade com o <b>menor</b>
+							número de algarismos significativos.</li>
+					</ul>
+				</section>
+				<section>
+					<li><em>Exemplo:</em> Área de um círculo com raio $r = 8$ m.
+						<div class="fragment white-frame">
 							$A = \pi r^2 = \pi (8 \text{ m})^2 \approx 201{,}0619...\text{ m}^2$ <br>
 							Como $r$ tem 1 AS, a área deve ter 1 AS:<br> $A \approx 200 \text{ m}^2$.
 						</div>
 					</li>
-				</ul>
+					</ul>
+				</section>
 			</section>
 
 			<section data-header="Adição e Subtração">
 				<ul>
 					<li>O número de <span class="underline">casas decimais</span> na resposta deve ser igual ao
 						do termo com o <span class="underline">menor número</span> de casas decimais.</li>
-					<li class="fragment">Exemplo: Subtrair 1,040 de 1,21342.
+					<li class="fragment"><em>Exemplo:</em> Subtrair 1,040 de 1,21342.
 						<div class="white-frame fragment">
 							1,21342 (5 casas decimais)<br>
 							- 1,040&nbsp;&nbsp;&nbsp;&nbsp; (3 casas decimais)<br>
@@ -126,7 +128,8 @@
 							0,17342 &rarr; Resultado deve ter 3 casas decimais: <strong>0,173</strong>
 						</div>
 					</li>
-					<li class="fragment">A precisão do resultado é limitada pelo termo menos preciso (1,040).</li>
+					<p class="fragment footnote-text">Nota: A precisão do resultado é limitada pelo termo menos preciso (1,040).
+					</p>
 				</ul>
 			</section>
 
@@ -138,7 +141,8 @@
 						<li class="fragment"><em>Exemplos:</em>
 							<ul>
 								<li class="fragment">Valores determinados por contagem (ex: 2 mesas).</li>
-								<li class="fragment">Fatores de conversão definidos (ex: $1 \text{ m} = 100 \text{ cm}$, então $\frac{1 \text{ m}}{100
+								<li class="fragment">Fatores de conversão definidos (ex: $1 \text{ m} = 100 \text{ cm}$, então $\frac{1
+									\text{ m}}{100
 									\text{ cm}}$ é exato).</li>
 								<li class="fragment">Constantes matemáticas como $\pi$.</li>
 							</ul>
@@ -209,7 +213,11 @@
 								$(1200 \times 10^{-1}) + (8 \times 10^{-1}) = (1200+8) \times 10^{-1} = 1208 \times 10^{-1} = 120,8$
 							</div>
 						</li>
-						<li class="fragment"><strong>Potenciação:</strong> Multiplique os expoentes.
+					</ul>
+				</section>
+				<section>
+					<ul>
+						<li><strong>Potenciação:</strong> Multiplique os expoentes.
 							<div class="white-frame"> $(10^2)^4 = 10^{2 \times 4} = 10^8$ </div>
 						</li>
 					</ul>
@@ -220,7 +228,7 @@
 				<ul>
 					<li>Números menores que 1 têm expoentes negativos.</li>
 					<li class="fragment">Verifique se somou/subtraiu/multiplicou os expoentes corretamente.</li>
-					<li class="fragment"><strong>Dígitos de Guarda:</strong> Em cálculos intermediários, use 1 ou 2 dígitos
+					<li class="fragment">Dígitos de Guarda: Em cálculos intermediários, use 1 ou 2 dígitos
 						extras (não significativos) para minimizar erros de arredondamento.</li>
 				</ul>
 			</section>
