@@ -58,137 +58,135 @@
 			<section data-header="Ordem de Grandeza">
 				<ul>
 					<li class="fragment">A ordem de grandeza é a potência de 10 mais próxima de um número.</li>
-					<li class="fragment">Exemplo: A altura de uma formiga é aproximadamente $10^{-3} \, \text{m}$.</li>
-					<li class="fragment">Usada para estimativas rápidas e simplificadas.</li>
+					<li class="fragment"><em>Exemplos:</em>
+						<div class="white-frame">
+							Altura de uma formiga: $8 \times 10^{-4} \text{ m} \approx 10^{-3} \text{ m}$. Ordem de grandeza:
+							$10^{-3}$ m.<br>
+							Altura humana: $h \approx 2 \text{ m}$. Como 2 está mais perto de $10^0 (=1)$ do que de $10^1 (=10)$, $h =
+							\mathcal{O}(10^0 \text{ m})$.
+						</div>
+					</li>
 				</ul>
 			</section>
 
 			<!-- NEW SLIDE -->
 			<section data-header="Exemplos de Ordem de Grandeza">
-				<table>
-					<thead>
-						<tr>
-							<th>Quantidade</th>
-							<th>Ordem de Grandeza</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Altura de uma pessoa</td>
-							<td>$10^0 \, \text{m}$</td>
-						</tr>
-						<tr>
-							<td>Diâmetro de um átomo</td>
-							<td>$10^{-10} \, \text{m}$</td>
-						</tr>
-						<tr>
-							<td>Distância até a estrela mais próxima</td>
-							<td>$10^{16} \, \text{m}$</td>
-						</tr>
-					</tbody>
-				</table>
+				<div class="white-frame small-text">
+					<table>
+						<thead>
+							<tr>
+								<th>Grandeza</th>
+								<th>Tamanho (m)</th>
+								<th>Massa (kg)</th>
+								<th>Tempo (s)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Próton</td>
+								<td>$10^{-15}$</td>
+								<td>$10^{-27}$</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>Átomo</td>
+								<td>$10^{-10}$</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>Vírus</td>
+								<td>$10^{-7}$</td>
+								<td>$10^{-19}$</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>Ser Humano</td>
+								<td>$10^{0}$</td>
+								<td>$10^{2}$</td>
+								<td>BPM: $10^0$</td>
+							</tr>
+							<tr>
+								<td>Terra</td>
+								<td>$10^{7}$</td>
+								<td>$10^{24}$</td>
+								<td>Rotação: $10^5$, Revolução: $10^7$</td>
+							</tr>
+							<tr>
+								<td>Sol</td>
+								<td>$10^{9}$</td>
+								<td>$10^{30}$</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>Via Láctea</td>
+								<td>$10^{21}$</td>
+								<td>$10^{41}$</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>Universo Visível</td>
+								<td>$10^{26}$</td>
+								<td>$10^{52}$</td>
+								<td>Idade: $10^{18}$</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+
+			<section data-header="Significado e Comparação">
+				<ul>
+					<li>Dizer $h = \mathcal{O}(10^0\mathrm{m})$ não significa que a altura é 1 m, mas que está mais próxima de 1 m
+						do que de 10 m
+						ou 0,1 m.</li>
+					<li class="fragment">Podemos dizer que um ser humano é três ordens de
+						grandeza mais alto que uma formiga ($10^0$ m vs $10^{-3}$ m), significando que a razão das
+						alturas é cerca de $10^3 = 1000$.</li>
+					<li class="fragment">Uma ordem de grandeza não fornece algarismos
+						significativos; é apenas uma estimativa grosseira.</li>
+				</ul>
 			</section>
 
 			<!-- NEW SLIDE -->
 			<section data-header="Problemas de Fermi">
-				<ul>
-					<li class="fragment">Problemas que envolvem estimativas usando ordem de grandeza.</li>
-					<li class="fragment">Exemplo: Estimar o número de grãos de areia em uma praia.</li>
-					<li class="fragment">Exemplo: Estimar a espessura de borracha desgastada de um pneu por km rodado.</li>
-				</ul>
-			</section>
-
-			<!-- NEW SLIDE -->
-			<section data-header="Exemplo: Espessura de Borracha Desgastada">
-				<ul>
-					<li>Assumir que a espessura inicial da banda de rodagem é de 1 cm.</li>
-					<li class="fragment">Assumir que o pneu é trocado após 60000 km.</li>
-					<li class="fragment">Cálculo: $1 \, \text{cm} / 60000 \, \text{km} = 1,7 \times 10^{-5} \, \text{cm/km} = 2
-						\times 10^{-7} \, \text{m/km}$.</li>
-				</ul>
-			</section>
-
-			<!-- NEW SLIDE -->
-			<section data-header="Exemplo: Número de Grãos de Areia">
-				<ul>
-					<li>Assumir que a praia tem 500 m de comprimento, 100 m de largura e 3 m de profundidade.</li>
-					<li class="fragment">Assumir que cada grão de areia tem 1 mm de diâmetro.</li>
-					<li class="fragment">Cálculo: $N = \frac{V_{\text{praia}}}{V_{\text{grão}}} = \frac{500 \times 100 \times
-						3}{\frac{4}{3}\pi (0,5 \times 10^{-3})^3} \approx 3 \times 10^{14}$ grãos.</li>
-				</ul>
-			</section>
-
-			<!-- NEW SLIDE -->
-			<section data-header="Ordem de Grandeza">
 				<section>
 					<ul>
-						<li>Em cálculos aproximados, às vezes arredondamos um número para a <span class="underline">potência de 10
-								mais próxima</span>. Isso é a <span class="spaced-small-caps">ordem de grandeza</span>.</li>
-						<li class="fragment">Símbolo: $\sim$ (significa "é da ordem de grandeza de").</li>
-						<li class="fragment">Exemplos:
-							<div class="white-frame">
-								Altura de uma formiga: $8 \times 10^{-4} \text{ m} \approx 10^{-3} \text{ m}$. Ordem de grandeza:
-								$10^{-3}$ m.<br>
-								Altura humana: $h \approx 2 \text{ m}$. Como 2 está mais perto de $10^0 (=1)$ do que de $10^1 (=10)$, $h
-								\sim 10^0 \text{ m}$.
-							</div>
+						<li>Problemas que envolvem estimativas usando ordem de grandeza.</li>
+						<li class="fragment">A ordem de grandeza pode ser estimada usando suposições plausíveis e cálculos simples.
 						</li>
-					</ul>
-				</section>
-				<!-- VERTICAL SLIDE -->
-				<section>
-					<h4>Significado e Comparação</h4>
-					<ul>
-						<li>Dizer $h \sim 10^0$ m não significa que a altura é 1 m, mas que está mais próxima de 1 m do que de 10 m
-							ou 0,1 m.</li>
-						<li class="fragment">Podemos dizer que um ser humano é <span class="underline">três ordens de
-								grandeza</span> mais alto que uma formiga ($10^0$ m vs $10^{-3}$ m), significando que a razão das
-							alturas é cerca de $10^3 = 1000$.</li>
-						<li class="fragment">Uma ordem de grandeza <span class="underline">não fornece algarismos
-								significativos</span>; é apenas uma estimativa grosseira.</li>
-					</ul>
-				</section>
-				<!-- VERTICAL SLIDE -->
-				<section>
-					<h4>Questões de Fermi</h4>
-					<ul>
-						<li>A ordem de grandeza pode ser estimada usando suposições plausíveis e cálculos simples.</li>
 						<li class="fragment">O físico Enrico Fermi era mestre em estimativas de ordem de grandeza para responder a
 							perguntas que pareciam impossíveis de calcular por falta de informação.</li>
-						<li class="fragment">Esses problemas são chamados de <span class="spaced-small-caps">Questões de
-								Fermi</span>.</li>
 					</ul>
 				</section>
-				<!-- VERTICAL SLIDE -->
 				<section>
-					<h4>Exemplo de Fermi: Desgaste de Pneu</h4>
-					<p>Qual a espessura de borracha desgastada do pneu do seu carro ao percorrer 1 km?
-					</p>
 					<ul>
-						<li class="fragment"><strong>Suposições:</strong>
+						<li><em>Exemplos:</em>
 							<ul>
-								<li>Espessura do piso novo $\approx 1 \text{ cm} = 10^{-2} \text{ m}$.</li>
-								<li>Vida útil do pneu $\approx 60.000 \text{ km} = 6 \times 10^7 \text{ m}$.</li>
-								<li>O piso se desgasta completamente na vida útil.</li>
+								<li class="fragment">Estimar o número de grãos de areia em uma praia.</li>
+								<li class="fragment">Estimar a espessura de borracha desgastada de um pneu por km rodado.</li>
 							</ul>
 						</li>
-						<li class="fragment"><strong>Cálculo (Ordem de Grandeza):</strong>
-							<div class="white-frame">
-								Taxa de desgaste $\approx \frac{10^{-2} \text{ m}}{6 \times 10^7 \text{ m}} \approx \frac{1}{6} \times
-								10^{-9} \approx 10^{-10}$ (sem unidade) <br>
-								Desgaste por 1 km ($10^3$ m) $\approx 10^{-10} \times 10^3 \text{ m} = 10^{-7} \text{ m}$
-							</div>
-						</li>
-						<li class="fragment">Resposta: A ordem de grandeza do desgaste é $10^{-7}$ m por km. (Cálculo mais preciso
-							no livro: $2 \times 10^{-7}$ m).</li>
 					</ul>
 				</section>
-				<!-- VERTICAL SLIDE -->
+
 				<section>
-					<h4>Exemplo de Fermi: Grãos de Areia</h4>
-					<p>Estime o número de grãos de areia em uma praia.</p>
+					<p>Resolução: Borracha Desgastada</p>
 					<ul>
-						<li class="fragment"><strong>Suposições (Exemplo):</strong>
+						<li>Assumir que a espessura inicial da banda de rodagem é de 1 cm.</li>
+						<li class="fragment">Assumir que o pneu é trocado após 60000 km.</li>
+						<li class="fragment">Cálculo: $1 \, \text{cm} / 60000 \, \text{km} = 1,7 \times 10^{-5} \, \text{cm/km} = 2
+							\times 10^{-7} \, \text{m/km}$.</li>
+						<li class="fragment">Ordem de grandeza do desgaste por km:
+							<div class="white-frame">$\mathcal{O}(10^{-7})$</div>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<p>Resolução: Grãos de Areia</p>
+					<ul>
+						<li class="fragment"><strong>Suposições:</strong>
 							<ul>
 								<li>Praia: 500 m comprimento, 100 m largura, 3 m profundidade. Volume $\approx 1,5 \times 10^5 \text{
 									m}^3 \sim 10^5 \text{ m}^3$.</li>
@@ -206,73 +204,6 @@
 						<li class="fragment">Resposta: A ordem de grandeza é $10^{14}$ grãos. (Cálculo mais preciso no livro: $3
 							\times 10^{14}$).</li>
 					</ul>
-				</section>
-				<!-- VERTICAL SLIDE -->
-				<section>
-					<h4>Universo por Ordens de Grandeza (Tabela 1-3)</h4>
-					<p>A Tabela 1-3 no livro fornece valores de ordem de grandeza para várias grandezas físicas:</p>
-					<div class="white-frame small-text">
-						<table>
-							<thead>
-								<tr>
-									<th>Grandeza</th>
-									<th>Tamanho (m)</th>
-									<th>Massa (kg)</th>
-									<th>Tempo (s)</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Próton</td>
-									<td>$10^{-15}$</td>
-									<td>$10^{-27}$</td>
-									<td>-</td>
-								</tr>
-								<tr>
-									<td>Átomo</td>
-									<td>$10^{-10}$</td>
-									<td>-</td>
-									<td>-</td>
-								</tr>
-								<tr>
-									<td>Vírus</td>
-									<td>$10^{-7}$</td>
-									<td>$10^{-19}$</td>
-									<td>-</td>
-								</tr>
-								<tr>
-									<td>Ser Humano</td>
-									<td>$10^{0}$</td>
-									<td>$10^{2}$</td>
-									<td>Batimento Cardíaco $10^0$</td>
-								</tr>
-								<tr>
-									<td>Terra</td>
-									<td>$10^{7}$</td>
-									<td>$10^{24}$</td>
-									<td>Rotação $10^5$, Revolução $10^7$</td>
-								</tr>
-								<tr>
-									<td>Sol</td>
-									<td>$10^{9}$</td>
-									<td>$10^{30}$</td>
-									<td>-</td>
-								</tr>
-								<tr>
-									<td>Via Láctea</td>
-									<td>$10^{21}$</td>
-									<td>$10^{41}$</td>
-									<td>-</td>
-								</tr>
-								<tr>
-									<td>Universo Visível</td>
-									<td>$10^{26}$</td>
-									<td>$10^{52}$</td>
-									<td>Idade $10^{18}$</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
 				</section>
 			</section>
 
@@ -297,7 +228,7 @@
 			controls: true,
 			progress: true,
 			slideNumber: 'c/t',
-			navigationMode: 'linear',
+			// navigationMode: 'linear',
 			history: true,
 			keyboard: true,
 			overview: true,

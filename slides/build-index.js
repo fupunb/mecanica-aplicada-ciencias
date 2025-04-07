@@ -28,11 +28,11 @@ const document = indexDom.window.document;
 
 // Find the index section
 const indexSection = document.querySelector('section[data-header="Índice"]');
-const olElement = indexSection.querySelector('ol');
+const listElement = indexSection.querySelector('ul');
 
 // Clear existing list items
-while (olElement.firstChild) {
-  olElement.removeChild(olElement.firstChild);
+while (listElement.firstChild) {
+  listElement.removeChild(listElement.firstChild);
 }
 
 // Add new items
@@ -42,7 +42,7 @@ indexItems.forEach(item => {
   a.href = item.path;
   a.textContent = item.title;
   li.appendChild(a);
-  olElement.appendChild(li);
+  listElement.appendChild(li);
 });
 
 // Write updated index.html
