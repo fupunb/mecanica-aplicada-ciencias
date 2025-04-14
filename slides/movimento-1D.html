@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.css">
 
     <!-- Theme -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/theme/black.css" id="theme">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/theme/beige.css" id="theme">
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/monokai.min.css">
@@ -28,7 +28,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Our custom styles -->
-    <link rel="stylesheet" href="https://mecanica-aplicada-ciencias.netlify.app/assets/css/custom.css">
+    <link rel="stylesheet" href="./assets/css/beige.css">
 </head>
 
 <body>
@@ -38,7 +38,7 @@
         <div class="slides">
 
             <!-- CAPA -->
-            <section data-background-opacity="0.80" data-background-size="contain"
+            <section data-background-opacity="0.70" data-background-size="contain"
                 data-background-image="https://raw.githubusercontent.com/fupunb/mecanica-aplicada-ciencias/refs/heads/main/slides/assets/img/logos/logo_unb.webp">
                 <h3 style="margin-top: 10%;"><strong>Universidade de Brasília</strong></h3>
                 <h3>Faculdade UnB Planaltina</h3>
@@ -57,7 +57,8 @@
                     <li class="fragment">Neste capítulo, analisamos o movimento de partículas ao longo de uma linha reta
                         (uma dimensão).</li>
                     <li class="fragment">Conceitos fundamentais: <strong>deslocamento</strong>,
-                        <strong>velocidade</strong> e <strong>rapidez</strong>.</li>
+                        <strong>velocidade</strong> e <strong>rapidez</strong>.
+                    </li>
                     <li class="fragment">Esses conceitos são essenciais para descrever e prever o movimento de objetos.
                     </li>
                 </ul>
@@ -115,7 +116,7 @@
                     </ul>
                 </section>
                 <section>
-                    <p class="small-text">Exemplo: Um estudante de bicicleta se move de $x_i$ para $x_f$. O deslocamento
+                    <p>Exemplo: Um estudante de bicicleta se move de $x_i$ para $x_f$. O deslocamento
                         é $\Delta x = x_f - x_i$.</p>
                 </section>
             </section>
@@ -175,7 +176,7 @@
                 <section>
                     <img src="https://raw.githubusercontent.com/fupunb/mecanica-aplicada-ciencias/main/slides/assets/img/figures/fig2-3_grafico_xt.png"
                         alt="Gráfico x vs t" style="width: 60%; border-radius: 10px;">
-                    <p class="small-text">No gráfico $x$ versus $t$, a <b>inclinação da reta</b> entre dois pontos
+                    <p>No gráfico $x$ versus $t$, a <b>inclinação da reta</b> entre dois pontos
                         representa a <b>velocidade média</b>.</p>
                 </section>
             </section>
@@ -221,7 +222,7 @@
                 <section>
                     <img src="https://raw.githubusercontent.com/fupunb/mecanica-aplicada-ciencias/main/slides/assets/img/figures/fig2-5_tangente.png"
                         alt="Tangente ao gráfico x vs t" style="width: 60%; border-radius: 10px;">
-                    <p class="small-text">A inclinação da reta tangente ao gráfico $x$ vs $t$ fornece a velocidade
+                    <p>A inclinação da reta tangente ao gráfico $x$ vs $t$ fornece a velocidade
                         instantânea.</p>
                 </section>
             </section>
@@ -344,12 +345,12 @@
             help: true,
             autoAnimate: true,
             autoAnimateEasing: 'ease',
-            backgroundTransition: 'concave',
-            transition: 'concave',
+            backgroundTransition: 'convex',
+            transition: 'convex',
             transitionSpeed: 'slow',
-            parallaxBackgroundImage: 'https://raw.githubusercontent.com/fupunb/mecanica-aplicada-ciencias/refs/heads/main/slides/assets/img/backgrounds/blue-neurons.webp',
-            parallaxBackgroundHorizontal: 150,
-            parallaxBackgroundVertical: 100,
+            parallaxBackgroundImage: './assets/img/backgrounds/cracked-parchment.webp',
+            parallaxBackgroundHorizontal: 75,
+            parallaxBackgroundVertical: 50,
             plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath.KaTeX]
         });
     </script>
