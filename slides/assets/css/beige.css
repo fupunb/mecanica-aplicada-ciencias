@@ -94,11 +94,10 @@
 }
 
 .spaced-small-caps {
-    font-size: 0.90em;
-    font-weight: normal;
-    font-variant: normal;
-    /* font-variant=normal ensures that no fake small caps is applied */
-    font-family: 'Playfair Display SC', 'Playfair Display', serif;
+    font-size: 1.10em;
+    font-weight: 600;
+    font-variant: small-caps;
+    font-family: var(--r-main-font), serif;
     font-optical-sizing: auto;
     letter-spacing: 0.05em;
 }

@@ -11,19 +11,18 @@
 
 /* custom fonts */
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Change theme fonts */
 :root {
-    --r-main-font: "Playfair Display", serif;
-    --r-heading-font: "Raleway", sans-serif;
+    --r-main-font: "EB Garamond", serif;
+    --r-heading-font: "Open Sans", sans-serif;
     --r-code-font: monospace;
     --r-heading-letter-spacing: normal;
     --r-heading-text-transform: none;
     --r-heading-text-shadow: 2px 2px 5px #101010;
     /* custom theme styles */
-    --t-heading-font-size: 1.1em;
-    --t-blue-font: #14C9D9;
+    --t-heading-font-size: 1.05em;
 }
 
 /* Ensure that optical sizing is applied to all text */
@@ -92,11 +91,10 @@
 }
 
 .spaced-small-caps {
-    font-size: 0.90em;
-    font-weight: normal;
-    font-variant: normal;
-    /* font-variant=normal ensures that no fake small caps is applied */
-    font-family: 'Playfair Display SC', 'Playfair Display', serif;
+    font-size: 1.10em;
+    font-weight: 500;
+    font-variant: small-caps;
+    font-family: var(--r-main-font), serif;
     font-optical-sizing: auto;
     letter-spacing: 0.05em;
 }
@@ -109,31 +107,6 @@
     margin: 1.0ex 0;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
     text-align: center;
-}
-
-div.header {
-    font-size: 1.1em;
-    font-weight: 500;
-    font-optical-sizing: auto;
-    font-family: var(--r-heading-font);
-    color: var(--t-blue-font);
-    margin-bottom: 0px;
-    text-align: left;
-    text-shadow: 2px 2px 5px #101010;
-}
-
-.blue-font {
-    color: var(--t-blue-font) !important;
-}
-
-.blue-glow {
-    text-shadow:
-        /* blue glow */
-        0 0 10px var(--t-blue-font),
-        0 0 20px var(--t-blue-font),
-        0 0 30px var(--t-blue-font),
-        0 0 40px var(--t-blue-font),
-        0 0 160px var(--t-blue-font);
 }
 
 section[data-header]::before {
