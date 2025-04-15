@@ -72,7 +72,7 @@
 /* Adjust math font size to match surrounding text */
 .MathJax,
 .katex {
-    font-size: 105% !important;
+    font-size: 95% !important;
 }
 
 .katex-display {

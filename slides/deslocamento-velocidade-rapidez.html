@@ -55,10 +55,10 @@
                 <ul>
                     <li>Descrever o movimento retilíneo em termos de deslocamento, velocidade média, velocidade
                         instantânea, aceleração média e aceleração instantânea.</li>
-                    <li>Interpretar gráficos de posição × tempo, velocidade × tempo e aceleração × tempo.</li>
-                    <li>Resolver problemas envolvendo movimento retilíneo com aceleração constante, incluindo queda
+                    <li class="fragment">Interpretar gráficos de posição × tempo, velocidade × tempo e aceleração × tempo.</li>
+                    <li class="fragment">Resolver problemas envolvendo movimento retilíneo com aceleração constante, incluindo queda
                         livre.</li>
-                    <li>Analisar movimentos com aceleração variável.</li>
+                    <li class="fragment">Analisar movimentos com aceleração variável.</li>
                 </ul>
             </section>
 
@@ -450,7 +450,13 @@
             parallaxBackgroundImage: 'https://raw.githubusercontent.com/fupunb/mecanica-aplicada-ciencias/refs/heads/main/slides/assets/img/backgrounds/galaxy-5k-darken.webp',
             parallaxBackgroundHorizontal: 200,
             parallaxBackgroundVertical: 100,
-            plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath.KaTeX]
+            mathjax3: {
+                mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js',
+                options: {
+                    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+                },
+            },
+            plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath.MathJax3]
         });
     </script>
 
