@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="description" content="Slides, Notas de Aula">
+    <meta name="keywords" content="Slides, Notas de Aula, Física, Mecânica, Ciências, UnB">
+    <meta name="author" content="Bernhard Enders">
+
+    <title>Movimento em Duas e Três Dimensões</title>
+
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.css">
+
+    <!-- Theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/theme/black.css" id="theme">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/monokai.min.css">
+
+    <!-- Google fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Our custom styles -->
+    <link rel="stylesheet" href="https://mecanica-aplicada-ciencias.netlify.app/assets/css/black.css">
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <div class="slides">
+
+            <!-- NEW SLIDE -->
+            <section data-background-opacity="0.80" data-background-size="contain"
+                data-background-image="https://raw.githubusercontent.com/fupunb/mecanica-aplicada-ciencias/refs/heads/main/slides/assets/img/logos/logo_unb.webp">
+                <!-- Universidade | Faculdade | Departamento  -->
+                <h3 style="margin-top: 10%;"><strong>Universidade de Brasília</strong></h3>
+                <h3>Faculdade UnB Planaltina</h3>
+                <!-- disciplina -->
+                <h4 style="margin-top: 5%;">FUP0407: - Mecânica Aplicada às Ciências</h4>
+                <!-- assunto -->
+                <h4 style="margin-top: 5%;">Movimento em Duas e Três Dimensões</h4>
+                <!-- professor -->
+                <div class="small-text" style="margin-top: 5%;">
+                    <div><img src="https://gravatar.com/avatar/60d294c6125ae4f5859f4b229249ec06?size=500" alt="avatar"
+                            width="64px" style="vertical-align: middle;"><em>Prof. Bernhard G. Enders</em></div>
+                </div>
+            </section>
+
+            <section data-header="Objetivos de Aprendizagem">
+                <ul>
+                    <li>
+                        Compreender o conceito de movimento em duas e três dimensões.
+                    </li>
+                    <li class="fragment">
+                        Entender a descrição vetorial do movimento em duas e três dimensões.
+                    </li>
+                    <li class="fragment">
+                        Conhecer os conceitos de deslocamento, velocidade e aceleração vetoriais.
+                    </li>
+                    <li class="fragment">
+                        Analisar casos especiais de movimento: movimento de projéteis e movimento circular.
+                    </li>
+                </ul>
+            </section>
+
+            <section data-header="Deslocamento, Velocidade e Aceleração">
+                <ul>
+                    <li class="">
+                        Para uma partícula no plano <em>xy</em>, o vetor posição é dado por: $$ \boxed{\vec{r} =
+                        x\hat{i} + y\hat{j}} $$
+                    </li>
+                    <li class="fragment">
+                        O deslocamento vetorial é a mudança no vetor posição: $$ \boxed{\Delta\vec{r} = \vec{r}_2 -
+                        \vec{r}_1} $$
+                    </li>
+                </ul>
+            </section>
+
+            <section data-header="Velocidade Vetorial">
+                <ul>
+                    <li>
+                        A velocidade média vetorial é definida como o deslocamento dividido pelo intervalo de tempo:
+                        $$ \boxed{\vec{v}_{\text{m}} = \frac{\Delta\vec{r}}{\Delta t}} $$
+                    </li>
+                    <li class="fragment">
+                        A velocidade instantânea vetorial é o limite da velocidade média quando
+                        $ \Delta t $ tende a zero: $$ \boxed{\vec{v} = \lim_{\Delta t \to 0} \frac{\Delta\vec{r}}{\Delta
+                        t} = \frac{d\vec{r}}{dt}} $$
+                    </li>
+                </ul>
+            </section>
+
+            <section data-header="Componentes da Velocidade Vetorial">
+                <ul>
+                    <li class="">
+                        O vetor deslocamento pode ser expresso em termos de suas componentes:
+                        $ \begin{aligned}\Delta \vec{r} = \vec{r}_2 - \vec{r}_1 &= (x_2 - x_1)\hat{i} + (y_2 -
+                        y_1)\hat{j} \\
+                        &= \Delta x \hat{i} + \Delta y \hat{j} \end{aligned}$
+                    </li>
+                    <li class="fragment">
+                        Então, podemos escrever a velocidade como:
+                        $$ \begin{aligned}\vec{v} &= \lim_{\Delta t \to 0} \frac{\Delta \vec{r}}{\Delta t} =
+                        \lim_{\Delta t \to 0} \frac{\Delta x \hat{i} + \Delta y \hat{j}}{\Delta t} \\
+                        &= \lim_{\Delta t \to 0} \left(\frac{\Delta x}{\Delta t}\right) \hat{i} + \lim_{\Delta t \to 0}
+                        \left(\frac{\Delta y}{\Delta t}\right) \hat{j}\end{aligned} $$
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <ul>
+                    <li class="">
+                        Assim, a velocidade vetorial pode ser expressa em termos de suas componentes:
+                        $$ \boxed{\vec{v} = \frac{dx}{dt} \hat{i} + \frac{dy}{dt} \hat{j} = v_x \hat{i} + v_y \hat{j}}
+                        $$
+                    </li>
+                    <li>
+                        E o seu módulo é dado por:
+                        $$ \boxed{v = |\vec{v}| = \sqrt{v_x^2 + v_y^2}} $$
+                    </li>
+                </ul>
+            </section>
+
+            <section data-header="Exemplo: Velocidade de um Barco à Vela">
+                <ul>
+                    <li>
+                        Um barco à vela tem coordenadas $(x_1, y_1)$ = (130 m, 205 m) em $t_1$ = 60,0 s.
+                    </li>
+                    <li class="fragment">
+                        Dois minutos depois, em $t_2$, tem coordenadas $(x_2, y_2)$ = (110 m, 218 m).
+                    </li>
+                    <li class="fragment">
+                        (a) Encontre a velocidade média para este intervalo de dois minutos.
+                    </li>
+                    <li class="fragment">
+                        (b) Encontre a magnitude (módulo) e direção da velocidade média.
+                    </li>
+                </ul>
+            </section>
+
+            <!--
+            <section data-header="Velocidade Relativa">
+                <ul>
+                    <li>
+                        A velocidade de um objeto A relativa a um objeto B é igual em magnitude e oposta em direção à
+                        velocidade de B relativa a A.
+                    </li>
+                    <li class="fragment">
+                        Se uma partícula p se move com velocidade $ \vec{v}_{pA} $ relativa ao referencial A, e A se
+                        move com velocidade $ \vec{v}_{AB} $ relativa ao referencial B, então a velocidade de p relativa
+                        a B é: $ \vec{v}_{pB} = \vec{v}_{pA} + \vec{v}_{AB} $
+                    </li>
+                </ul>
+            </section>
+            -->
+
+            <section data-header="Movimento de Projéteis">
+                <ul>
+                    <li>
+                        Um caso especial de movimento em duas dimensões.
+                    </li>
+                    <li class="fragment">
+                        A trajetória de um projétil é uma parábola se a resistência do ar for desprezada.
+                    </li>
+                    <li class="fragment">
+                        Componentes da velocidade: $ v_x = v_{0x} $ e $ v_y = v_{0y} - gt $
+                    </li>
+                </ul>
+            </section>
+
+            <section data-header="Movimento de Projéteis em Forma Vetorial">
+                <p>Para o movimento de projéteis, temos $a_x =0$ e $a_y = -g$, onde a direção $+y$
+                    é diretamente para cima.</p>
+                <ul>
+                    <li class="fragment">Para expressar essas equações em forma vetorial, multiplicamos ambos os lados
+                        de cada equação pelo vetor unitário apropriado e depois somamos as duas equações resultantes.
+                    </li>
+                    <li class="fragment">Isso nos dá: $a_x\hat{i} + a_y\hat{j} = -g\hat{j}$ ou $\vec{a} = \vec{g}$
+                    </li>
+                </ul>
+            </section>
+
+            <section data-header="Equações Cinemáticas para Movimento de Projéteis">
+                <ul>
+                    <li class="">Combinando as equações $v_x = v_{0x}$ e $v_y = v_{0y} - gt$ de maneira similar,
+                        obtemos: $\vec{v} = \vec{v}_0 + \vec{g}t$ (ou $\Delta\vec{v} = \vec{g}t$)</li>
+                    <li class="fragment">onde $\vec{v} = v_x\hat{i} + v_y\hat{j}$, $\vec{v}_0 = v_{0x}\hat{i} +
+                        v_{0y}\hat{j}$ e $\vec{g} = -g\hat{j}$</li>
+                    <li class="fragment">Repetindo o processo para as equações $x(t) = x_0 + v_{0x}t$ e $y(t) = y_0 +
+                        v_{0y}t -\frac{1}{2}gt^2$, obtemos: $\vec{r} = \vec{r}_0 + \vec{v}_0t + \frac{1}{2}\vec{g}t^2$
+                        (ou $\Delta\vec{r} = \vec{v}t + \frac{1}{2}\vec{g}t^2$)</li>
+                </ul>
+            </section>
+
+            <section data-header="Equações Cinemáticas para Movimento de Projéteis">
+                <ul>
+                    <li class="">onde $\vec{r} = x\hat{i} + y\hat{j}$ e $\vec{r}_0 = x_0\hat{i} + y_0\hat{j}$.
+                    </li>
+                    <li class="fragment">As formas vetoriais das equações cinemáticas são úteis
+                        para resolver vários problemas.</li>
+                </ul>
+            </section>
+
+            <section data-header="Movimento Circular">
+                <ul>
+                    <li>
+                        Outro caso especial de movimento em duas dimensões.
+                    </li>
+                    <li class="fragment">
+                        A trajetória é um círculo.
+                    </li>
+                    <li class="fragment">
+                        A velocidade é tangente ao círculo.
+                    </li>
+                </ul>
+            </section>
+
+            <section data-header="Exercício Proposto">
+                <p>Um barco à vela se move ao longo de uma trajetória curva. Em um certo instante, sua posição é dada
+                    pelo vetor $ \vec{r} = (150\hat{i} + 200\hat{j}) $ metros. Cinco minutos depois, sua posição é $
+                    \vec{r} = (170\hat{i} + 220\hat{j}) $ metros. Calcule a velocidade média do barco durante esse
+                    intervalo de tempo.</p>
+            </section>
+
+        </div><!-- End of slides -->
+
+    </div><!-- End of reveal -->
+
+    <!-- Reveal.js Core JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.js"></script>
+
+    <!-- Reveal.js Plugins (optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/zoom/zoom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/search/search.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/math/math.min.js"></script>
+
+    <!-- This MUST be the LAST script tag in the body -->
+    <script>
+        Reveal.initialize({
+            hash: true,     // Add slide hashes to the URL
+            controls: true,     // Display controls in the bottom right corner
+            progress: true,     // Display a presentation progress bar
+            slideNumber: 'c/t',   // Display the current slide number (false, c/t, h/v, h.v, c)
+            navigationMode: 'linear',    // Navigation mode (default, linear, grid)
+            history: true,     // Push each slide change to the browser history
+            keyboard: true,     // Enable keyboard shortcuts for navigation
+            overview: true,     // Enable slide overview (press 'Esc')
+            center: false,     // Vertical centering of slides
+            touch: true,     // Enables touch navigation on devices
+            loop: false,    // Loop the presentation
+            fragments: true,     // Step through fragments (bullet points, etc.)
+            embedded: false,    // Is this presentation embedded in another page?
+            help: true,     // Show keyboard shortcuts help overlay (press '?')
+            autoAnimate: true, // Enable auto-animate transitions
+            autoAnimateEasing: 'ease',
+            backgroundTransition: 'concave',   // Transition between slides (none, fade, slide, convex, concave, zoom)
+            transition: 'concave',    // Transition between slides (default, fade, slide, convex, concave, zoom)
+            transitionSpeed: 'slow',    // Transition speed (default, fast, slow)
+            parallaxBackgroundImage: 'https://raw.githubusercontent.com/fupunb/mecanica-aplicada-ciencias/refs/heads/main/slides/assets/img/backgrounds/physics-equations.webp',
+            //parallaxBackgroundSize: '5120px 2880px',
+            parallaxBackgroundHorizontal: 200,
+            parallaxBackgroundVertical: 100,
+            mathjax3: {
+                mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js',
+                options: {
+                    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+                },
+            },
+            plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath.MathJax3]
+        });
+    </script>
+</body>
+
+</html>

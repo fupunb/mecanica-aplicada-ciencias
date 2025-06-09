@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta name="description" content="Slides, Notas de Aula">
+    <meta name="keywords" content="Slides, Notas de Aula, Física, Mecânica, Ciências, UnB, Leis de Newton">
+    <meta name="author" content="Baseado no Conteúdo Fornecido e no Template de Bernhard Enders">
+
+    <title>As Leis de Newton</title>
+
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.css">
+
+    <!-- Theme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/theme/black.css" id="theme">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/monokai.min.css">
+
+    <!-- Google fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Our custom styles -->
+    <link rel="stylesheet" href="https://mecanica-aplicada-ciencias.netlify.app/assets/css/black.css">
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <div class="slides">
+
+            <!-- NEW SLIDE -->
+            <section data-background-opacity="0.80" data-background-size="contain"
+                data-background-image="https://raw.githubusercontent.com/fupunb/mecanica-aplicada-ciencias/refs/heads/main/slides/assets/img/logos/logo_unb.webp">
+                <!-- Universidade | Faculdade | Departamento  -->
+                <h3 style="margin-top: 10%;"><strong>Universidade de Brasília</strong></h3>
+                <h3>Faculdade UnB Planaltina</h3>
+                <!-- disciplina -->
+                <h4 style="margin-top: 5%;">FUP0407: - Mecânica Aplicada às Ciências</h4>
+                <!-- assunto -->
+                <h4 style="margin-top: 5%;">As Leis de Newton</h4>
+                <!-- professor -->
+                <div class="small-text" style="margin-top: 5%;">
+                    <div><img src="https://gravatar.com/avatar/60d294c6125ae4f5859f4b229249ec06?size=500" alt="avatar"
+                            width="64px" style="vertical-align: middle;"><em>Prof. Bernhard G. Enders</em></div>
+                </div>
+            </section>
+
+            <section data-header="Objetivos de Aprendizagem">
+                <ul>
+                    <li>
+                        Compreender a importância das Leis de Newton na análise do movimento.
+                    </li>
+                    <li class="fragment">
+                        Analisar a Primeira Lei de Newton e o conceito de Inércia e Referenciais Inerciais.
+                    </li>
+                    <li class="fragment">
+                        Definir Força e Massa e identificar os diferentes tipos de forças e interações fundamentais.
+                    </li>
+                    <li class="fragment">
+                        Entender como forças múltiplas se combinam na Força Resultante.
+                    </li>
+                </ul>
+            </section>
+
+            <section data-header="Objetivos de Aprendizagem">
+                <ul>
+                    <li class="">
+                        Aplicar a Segunda Lei de Newton para relacionar força, massa e aceleração, e resolver problemas
+                        de
+                        dinâmica.
+                    </li>
+                    <li class="fragment">
+                        Diferenciar massa de peso e analisar a força gravitacional.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Seção 4-1 -->
+            <section data-header="As Leis de Newton">
+                <ul>
+                    <li>Por que os objetos começam a se mover?</li>
+                    <li class="fragment">O que causa um objeto em movimento a mudar de velocidade ou direção?</li>
+                    <li class="fragment">Isaac Newton (1642-1727) desenvolveu as três leis básicas do movimento que
+                        formam a base da mecânica clássica.</li>
+                    <li class="fragment">As Leis de Newton relacionam as forças que os objetos exercem uns sobre os
+                        outros e relacionam qualquer mudança no movimento de um objeto às forças que agem sobre ele.
+                    </li>
+                </ul>
+            </section>
+
+            <section data-header="Primeira Lei de Newton: A Lei da Inércia">
+                <ul>
+                    <li>Observação comum: Objetos em movimento tendem a parar devido ao atrito.</li>
+                    <li class="fragment">Galileu e Newton reconheceram que a lentidão observada no dia a dia é
+                        causada por forças como a fricção.</li>
+                    <li class="fragment">Se pudéssemos remover todas as forças externas (incluindo a fricção), a
+                        velocidade de um objeto nunca mudaria - uma propriedade da matéria descrita como <span
+                            class="spaced-small-caps">Inércia</span>.</li>
+                    <li class="fragment">Tal é a Lei da Inércia.
+                    </li>
+                </ul>
+            </section>
+
+            <section data-header="Primeira Lei de Newton">
+                <div class="white-frame">
+                    <ul>
+                        <li> Um objeto em repouso permanece em repouso, a menos que atue
+                            sobre ele uma força externa.</li>
+                        <li class="fragment">Um objeto em movimento continua a se mover com velocidade constante em
+                            linha
+                            reta, a menos que atue sobre ele uma força externa.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Referenciais Inerciais -->
+            <section data-header="Referenciais Inerciais">
+                <section>
+                    <ul>
+                        <li>A Primeira Lei de Newton não distingue entre um objeto em repouso e um objeto movendo-se com
+                            velocidade constante (não nula).</li>
+                        <li class="fragment">A validade da declaração da Primeira Lei depende do <span
+                                class="spaced-small-caps">Referencial</span> no qual o objeto é observado.</li>
+                    </ul>
+                </section>
+                <section>
+                    <ul>
+                        <li class="fragment">Exemplo: Uma bola de tênis na bandeja de um avião.</li>
+                        <ul>
+                            <li class="fragment">Se o avião voa com velocidade constante (em relação ao solo), a bola
+                                permanece em repouso (em relação ao avião) e se move com a mesma velocidade do avião (em
+                                relação ao solo). A Primeira Lei se aplica.</li>
+                            <li class="fragment">Se o avião acelera (em relação ao solo), a bola rola para trás (em
+                                relação ao avião) *sem* força horizontal atuando sobre ela. A Primeira Lei *não* se
+                                aplica neste referencial acelerado do avião.</li>
+                        </ul>
+                    </ul>
+                </section>
+            </section>
+
+            <section>
+                <h4>Definição de Referencial Inercial</h4>
+                <div class="white-frame">
+                    <p>Se nenhuma força atua sobre um objeto, qualquer referencial no qual a aceleração do objeto
+                        permanece zero é um referencial inercial.</p>
+                </div>
+                <ul>
+                    <li class="fragment">Referenciais que se movem com velocidade constante em relação a um
+                        referencial inercial também são inerciais.</li>
+                    <li class="fragment">A superfície da Terra é, para uma boa aproximação, um referencial inercial
+                        (acelerações devidas à rotação e revolução da Terra são muito pequenas, da ordem de $0{,}01
+                        \text{ m/s}^2$ ou menos).</li>
+                </ul>
+            </section>
+
+            <!-- Seção 4-2 -->
+            <section data-header="Força e Massa">
+                <section>
+                    <h4>Força</h4>
+                    <ul>
+                        <li>Definição (usando a Primeira Lei e referenciais inerciais): Uma <span
+                                class="spaced-small-caps">Força</span> é uma influência ou ação externa sobre um
+                            objeto
+                            que causa a mudança de velocidade do objeto (ou seja, acelera-o) em relação a um
+                            referencial
+                            inercial.</li>
+                        <li class="fragment">Força é uma grandeza <span class="spaced-small-caps">vetorial</span>
+                            (possui magnitude e direção).</li>
+                        <li class="fragment">Forças são exercidas por outros objetos.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Tipos de Forças</h4>
+                    <ul>
+                        <li><span class="spaced-small-caps">Forças de Contato:</span> Devidas ao toque físico entre
+                            objetos (ex: bater, puxar, empurrar, fricção). Origem eletromagnética.</li>
+                        <li class="fragment">
+                            <span class="spaced-small-caps">Forças de Ação à Distância:</span> Agem sem contato
+                            físico
+                            direto (ex: força gravitacional, magnética, elétrica).
+                            <div class="fragment">
+                                Explicadas por meio de <span class="spaced-small-caps">Campos</span> (gravitacional,
+                                elétrico, magnético) que agem como intermediários.
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Interações Fundamentais da Natureza</h4>
+                    <p>Interações entre partículas explicadas tradicionalmente em termos de quatro interações
+                        básicas:
+                    </p>
+                    <ul>
+                        <li><span class="spaced-small-caps">Interação Gravitacional:</span> Longo alcance, devido à
+                            massa. Responsável pela órbita de planetas, marés.</li>
+                        <li class="fragment"><span class="spaced-small-caps">Interação Eletromagnética:</span> Longo
+                            alcance, entre partículas carregadas eletricamente (troca de fótons). Explica forças
+                            elétricas e magnéticas, forças de contato.</li>
+                        <li class="fragment"><span class="spaced-small-caps">Interação Fraca:</span> Curto alcance,
+                            entre partículas subnucleares (troca de bósons W e Z). Unificada com EM na interação
+                            Eletrofraca.</li>
+                        <li class="fragment"><span class="spaced-small-caps">Interação Forte:</span> Longo alcance
+                            (dentro do núcleo), entre hádrons/quarks. Liga prótons e nêutrons nos núcleos atômicos.
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Combinando Forças: Força Resultante</h4>
+                    <ul>
+                        <li>Se duas ou mais forças atuam simultaneamente sobre um objeto, o resultado é como se uma
+                            única força, igual à soma vetorial das forças individuais, atuasse no lugar delas.
+                            (Princípio da Superposição)</li>
+                        <li class="fragment">A soma vetorial das forças individuais sobre um objeto é chamada de
+                            <span class="spaced-small-caps">Força Resultante</span> (ou Força Líquida)
+                            $\vec{F}_{\text
+                            {net}}$.
+                        </li>
+                        <li class="fragment">
+                            <div class="white-frame">
+                                $$ \vec{F}_{\mathrm{net}}=\vec{F}_{1}+\vec{F}_{2}+\cdots $$
+                            </div>
+                        </li>
+                        <li class="fragment">Unidade SI de Força: <span class="spaced-small-caps">Newton (N)</span>.
+                            Definido na Segunda Lei. Cerca do peso de uma maçã pequena.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Massa</h4>
+                    <ul>
+                        <li>Objetos intrinsecamente resistem a ser acelerados. Essa propriedade intrínseca é chamada
+                            <span class="spaced-small-caps">Massa</span>.
+                        </li>
+                        <li class="fragment">É uma medida da inércia do objeto. Quanto maior a massa, mais o objeto
+                            resiste à aceleração.</li>
+                        <li class="fragment">Unidade SI de Massa: <span class="spaced-small-caps">Quilograma
+                                (kg)</span>. Padrão internacional em Sèvres, França.</li>
+                        <li class="fragment">Unidade de massa atômica unificada (u): $1 \text{ u} = 1{,}660540
+                            \times
+                            10^{-27} \text{ kg}$.</li>
+                        <li class="fragment">Massa é definida como uma constante de proporcionalidade na Segunda Lei
+                            de
+                            Newton. Pode ser medida comparando-se a aceleração sob uma força conhecida com a de uma
+                            massa padrão.</li>
+                        <li class="fragment">Massa é uma propriedade intrínseca do objeto, não depende de sua
+                            localização.</li>
+                    </ul>
+                </section>
+            </section>
+
+            <!-- Seção 4-3 -->
+            <section data-header="Segunda Lei de Newton">
+                <section>
+                    <h4>A Relação entre Força e Aceleração</h4>
+                    <ul>
+                        <li>A aceleração de um objeto é diretamente proporcional à força resultante que age sobre
+                            ele e
+                            inversamente proporcional à sua massa.</li>
+                        <li class="fragment">O vetor aceleração $\vec{a}$ e o vetor força resultante $\vec{F}_{\text
+                            {net}}$ têm a mesma direção.</li>
+                        <li class="fragment">
+                            <div class="white-frame">
+                                $$ \vec{a}=\frac{\vec{F}_{\mathrm{net}}}{m}, \quad \text { onde } \quad
+                                \vec{F}_{\mathrm{net}}=\sum \vec{F} $$
+                            </div>
+                        </li>
+                        <li class="fragment">Frequentemente expressa como:</li>
+                        <li class="fragment">
+                            <div class="white-frame">
+                                $$ \vec{F}_{\mathrm{net}}=m \vec{a} $$
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Unidades de Força e Massa</h4>
+                    <ul>
+                        <li>A força resultante é a causa, a aceleração é o efeito.</li>
+                        <li class="fragment">Definição de Newton (N):</li>
+                        <li class="fragment">
+                            <div class="white-frame">
+                                $$ 1 \mathrm{~N}=(1 \mathrm{~kg})\left(1 \mathrm{~m} / \mathrm{s}^{2}\right)=1
+                                \mathrm{~kg} \cdot \mathrm{~m} / \mathrm{s}^{2} $$
+                            </div>
+                        </li>
+                        <li class="fragment">Sistema usual dos EUA:</li>
+                        <ul>
+                            <li class="fragment">Unidade de força: <span class="spaced-small-caps">Libra
+                                    (lb)</span>. $1
+                                \mathrm{lb} \approx 4{,}45 \mathrm{~N}$.</li>
+                            <li class="fragment">Unidade de massa: <span class="spaced-small-caps">Slug</span>. $1
+                                \mathrm{slug} \approx 14{,}6 \mathrm{~kg}$.</li>
+                            <li class="fragment">$1 \mathrm{lb}=1 \mathrm{slug} \cdot \mathrm{~ft} /
+                                \mathrm{s}^{2}$.
+                            </li>
+                        </ul>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Exemplo 1: Um Cartão de Sorvete Deslizando</h4>
+                    <p>Uma força de um elástico esticado produz aceleração de $5{,}0 \text{ m/s}^2$ em um cartão de
+                        massa $m_1=1{,}0 \text{ kg}$. A mesma força em um cartão de massa $m_2$ produz aceleração de
+                        $11
+                        \text{ m/s}^2$. (a) Qual a massa do segundo cartão? (b) Qual a magnitude da força?</p>
+                    <div class="white-frame">
+                        <p>(a) Pela Segunda Lei, $F = m_1 a_1$ e $F = m_2 a_2$. Como as forças são iguais
+                            ($F_1=F_2=F$):
+                        </p>
+                        $$ m_1 a_1 = m_2 a_2 \implies \frac{m_2}{m_1} = \frac{a_1}{a_2} $$
+                        $$ m_2 = m_1 \left( \frac{a_1}{a_2} \right) = (1{,}0 \text{ kg}) \left( \frac{5{,}0 \text{
+                        m/s}^2}{11 \text{ m/s}^2} \right) = 0{,}45 \text{ kg} $$
+                        <p class="fragment">(b) A magnitude da força é:</p>
+                        $$ F = m_1 a_1 = (1{,}0 \text{ kg})(5{,}0 \text{ m/s}^2) = 5{,}0 \text{ N} $$
+                    </div>
+                </section>
+                <section>
+                    <h4>Exemplo 2: Uma Caminhada no Espaço</h4>
+                    <p>Você está preso no espaço. Um propulsor fornece uma força resultante constante $\vec{F}$ por
+                        $3{,}0 \text{ s}$. Após $3{,}0 \text{ s}$, você se moveu $2{,}25 \text{ m}$ (partindo do
+                        repouso). Se sua massa é $68 \text{ kg}$, encontre $\vec{F}$.</p>
+                    <div class="white-frame">
+                        <p>A força constante implica aceleração constante. Use cinemática ($\Delta x = v_0 t +
+                            \frac{1}{2} a_x t^2$, com $v_0=0$):</p>
+                        $$ 2{,}25 \text{ m} = 0 + \frac{1}{2} a_x (3{,}0 \text{ s})^2 \implies a_x = \frac{2(2{,}25
+                        \text{ m})}{(3{,}0 \text{ s})^2} = \frac{4{,}50}{9{,}0} \text{ m/s}^2 = 0{,}50 \text{ m/s}^2
+                        $$
+                        <p class="fragment">Considerando a direção de $\vec{F}$ como $+x$, $\vec{a} = 0{,}50 \text{
+                            m/s}^2 \hat{i}$.</p>
+                        <p class="fragment">Pela Segunda Lei de Newton ($\vec{F}_{\text{net}} = m\vec{a}$):</p>
+                        $$ \vec{F} = m \vec{a} = (68 \text{ kg})(0{,}50 \text{ m/s}^2 \hat{i}) = 34 \text{ N}
+                        \hat{i} $$
+                    </div>
+                    <div class="fragment">
+                        <img data-src="https://cdn.mathpix.com/cropped/2025_06_04_91b479f1f8bc2ea1c865g-6.jpg?height=474&width=408&top_left_y=1918&top_left_x=1459"
+                            style="max-height: 200px;">
+                    </div>
+                </section>
+                <section>
+                    <h4>Exemplo 3: Uma Partícula Sujeita a Duas Forças</h4>
+                    <p>Uma partícula de massa $0{,}400 \text{ kg}$ é sujeita simultaneamente a $\vec{F}_{1}=-2{,}00
+                        \text{ N} \hat{i}-4{,}00 \text{ N} \hat{j}$ e $\vec{F}_{2}=-2{,}60 \text{ N} \hat{i}+5{,}00
+                        \text{ N} \hat{j}$. Se a partícula está na origem e parte do repouso ($t=0$), encontre (a)
+                        sua
+                        posição $\vec{r}$ e (b) sua velocidade $\vec{v}$ em $t=1{,}60 \text{ s}$.</p>
+                    <div class="white-frame">
+                        <p>Força Resultante: $\vec{F}_{\text {net}} = \vec{F}_1 + \vec{F}_2$</p>
+                        $$ \vec{F}_{\text {net}} = (-2{,}00 \hat{i} - 4{,}00 \hat{j}) + (-2{,}60 \hat{i} + 5{,}00
+                        \hat{j}) = (-2{,}00 - 2{,}60)\hat{i} + (-4{,}00 + 5{,}00)\hat{j} $$
+                        $$ \vec{F}_{\text {net}} = -4{,}60 \text{ N} \hat{i} + 1{,}00 \text{ N} \hat{j} $$
+                        <p class="fragment">Aceleração ($\vec{a} = \vec{F}_{\text{net}} / m$):</p>
+                        $$ \vec{a} = \frac{-4{,}60 \text{ N} \hat{i} + 1{,}00 \text{ N} \hat{j}}{0{,}400 \text{ kg}}
+                        =
+                        -11{,}5 \text{ m/s}^2 \hat{i} + 2{,}50 \text{ m/s}^2 \hat{j} $$
+                    </div>
+                </section>
+                <section>
+                    <h4>Exemplo 3: Solução (cont.)</h4>
+                    <div class="white-frame">
+                        <p>(a) Posição em $t=1{,}60 \text{ s}$ (cinemática, $\vec{r}_0=0, \vec{v}_0=0$):</p>
+                        $$ \vec{r} = \vec{r}_0 + \vec{v}_0 t + \frac{1}{2} \vec{a} t^2 = 0 + 0 + \frac{1}{2} \vec{a}
+                        t^2
+                        = \frac{1}{2} \vec{a} t^2 $$
+                        $$ \vec{r}(1{,}60 \text{ s}) = \frac{1}{2} (-11{,}5 \hat{i} + 2{,}50 \hat{j}) (1{,}60)^2 $$
+                        $$ \vec{r}(1{,}60 \text{ s}) = \frac{1}{2} (-11{,}5 \hat{i} + 2{,}50 \hat{j}) (2{,}56) $$
+                        $$ \vec{r}(1{,}60 \text{ s}) = (-5{,}75 \times 2{,}56) \hat{i} + (1{,}25 \times 2{,}56)
+                        \hat{j}
+                        $$
+                        $$ \vec{r}(1{,}60 \text{ s}) = -14{,}72 \hat{i} + 3{,}20 \hat{j} \text{ m} \approx -14{,}7
+                        \text{ m} \hat{i} + 3{,}20 \text{ m} \hat{j} $$
+                        <p class="fragment">(b) Velocidade em $t=1{,}60 \text{ s}$ (cinemática, $\vec{v}_0=0$):</p>
+                        $$ \vec{v} = \vec{v}_0 + \vec{a} t = 0 + \vec{a} t = \vec{a} t $$
+                        $$ \vec{v}(1{,}60 \text{ s}) = (-11{,}5 \hat{i} + 2{,}50 \hat{j}) (1{,}60) $$
+                        $$ \vec{v}(1{,}60 \text{ s}) = -18{,}4 \hat{i} + 4{,}00 \hat{j} \text{ m/s} $$
+                    </div>
+                </section>
+            </section>
+
+            <!-- Seção 4-4 -->
+            <section data-header="A Força Devido à Gravidade: Peso">
+                <section>
+                    <h4>Força Gravitacional e Peso</h4>
+                    <ul>
+                        <li>Perto da superfície da Terra, objetos caem com a mesma aceleração (ignorando a
+                            resistência
+                            do ar), chamada aceleração de queda livre $\vec{g}$.</li>
+                        <li class="fragment">A força que causa essa aceleração é a <span class="spaced-small-caps">Força
+                                Gravitacional</span> ($\vec{F}_g$) exercida pela Terra sobre o objeto.</li>
+                        <li class="fragment">O <span class="spaced-small-caps">Peso</span> de um objeto é a
+                            magnitude da
+                            força gravitacional sobre ele.</li>
+                        <li class="fragment">Um objeto está em queda livre se a força gravitacional é a única força
+                            atuando.</li>
+                        <li class="fragment">Aplicando a Segunda Lei ($\sum \vec{F} = m \vec{a}$) a um objeto de
+                            massa
+                            $m$ em queda livre ($\vec{a} = \vec{g}$):</li>
+                        <li class="fragment">
+                            <div class="white-frame">
+                                $$ \vec{F}_g = m \vec{g} $$
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Magnitude de $g$ e Variações</h4>
+                    <ul>
+                        <li>Perto da superfície da Terra, a magnitude de $\vec{g}$ é:</li>
+                        <li class="fragment">
+                            <div class="white-frame">
+                                $$ g = 9{,}81 \mathrm{~N/kg} = 9{,}81 \mathrm{~m/s^2} $$
+                            </div>
+                        </li>
+                        <li class="fragment">No sistema usual dos EUA: $g = 32{,}2 \mathrm{~ft/s^2}$.</li>
+                        <li class="fragment">$\vec{g}$ aponta para o centro da Terra.</li>
+                        <li class="fragment">A magnitude de $g$ varia ligeiramente com a altitude e a latitude
+                            (Terra
+                            não é perfeitamente esférica, rotação).</li>
+                        <li class="fragment"><span class="spaced-small-caps">Peso, ao contrário da Massa, NÃO é uma
+                                propriedade intrínseca de um objeto.</span> Ele varia de local para local devido às
+                            variações em $g$.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Massa vs. Peso</h4>
+                    <ul>
+                        <li><span class="spaced-small-caps">Massa:</span> Medida da inércia (resistência à
+                            aceleração).
+                            Propriedade intrínseca, constante para o objeto, independente da localização.</li>
+                        <li class="fragment"><span class="spaced-small-caps">Peso:</span> Magnitude da força
+                            gravitacional sobre o objeto ($W = mg$). Depende do valor de $g$ no local, portanto,
+                            varia
+                            com a localização.</li>
+                        <li class="fragment">Exemplo: Uma bola de boliche pesa menos na Lua do que na Terra
+                            ($g_{Lua}
+                            \approx g_{Terra}/6$), mas sua massa é a mesma. Empurrá-la horizontalmente com a mesma
+                            aceleração requer a mesma força em ambos os locais.</li>
+                        <li class="fragment">Em um dado local, o peso de um objeto é proporcional à sua massa.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h4>Peso Aparente e Aparentemente Sem Peso</h4>
+                    <ul>
+                        <li>Nossa sensação de peso vem das forças que o equilibram (a força da cadeira quando
+                            sentamos,
+                            a força da balança quando nos pesamos).</li>
+                        <li class="fragment"><span class="spaced-small-caps">Peso Aparente:</span> Magnitude da
+                            força
+                            exercida pelo suporte que equilibra (ou não) a força gravitacional sobre você.</li>
+                        <li class="fragment">Se não há força para equilibrar seu peso (como em queda livre), seu
+                            peso
+                            aparente é zero.</li>
+                        <li class="fragment">Esta condição de <span class="spaced-small-caps">aparentemente sem
+                                peso</span> é experimentada por astronautas em satélites orbitais.</li>
+                        <li class="fragment">Em órbita, a única força significativa sobre o astronauta é a
+                            gravitacional, que causa a aceleração $\vec{g}$. Como nenhuma força equilibra a
+                            gravidade, o
+                            peso aparente é zero.</li>
+                    </ul>
+                </section>
+            </section>
+
+        </div><!-- End of slides -->
+
+    </div><!-- End of reveal -->
+
+    <!-- Reveal.js Core JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/reveal.min.js"></script>
+    <!-- Reveal.js Plugins (optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/zoom/zoom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/search/search.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.2.1/plugin/math/math.min.js"></script>
+
+    <!-- This MUST be the LAST script tag in the body -->
+    <script>
+        Reveal.initialize({
+            hash: true,     // Add slide hashes to the URL
+            controls: true,     // Display controls in the bottom right corner
+            progress: true,     // Display a presentation progress bar
+            slideNumber: 'c/t',   // Display the current slide number (false, c/t, h/v, h.v, c)
+            navigationMode: 'linear',    // Navigation mode (default, linear, grid)
+            history: true,     // Push each slide change to the browser history
+            keyboard: true,     // Enable keyboard shortcuts for navigation
+            overview: true,     // Enable slide overview (press 'Esc')
+            center: false,     // Vertical centering of slides
+            touch: true,     // Enables touch navigation on devices
+            loop: false,    // Loop the presentation
+            fragments: true,     // Step through fragments (bullet points, etc.)
+            embedded: false,    // Is this presentation embedded in another page?
+            help: true,     // Show keyboard shortcuts help overlay (press '?')
+            autoAnimate: true, // Enable auto-animate transitions
+            autoAnimateEasing: 'ease',
+            backgroundTransition: 'concave',   // Transition between slides (none, fade, slide, convex, concave, zoom)
+            transition: 'concave',    // Transition between slides (default, fade, slide, convex, concave, zoom)
+            transitionSpeed: 'slow',    // Transition speed (default, fast, slow)
+            parallaxBackgroundImage: 'https://raw.githubusercontent.com/fupunb/mecanica-aplicada-ciencias/refs/heads/main/slides/assets/img/backgrounds/quantum-physics-01.webp',
+            //parallaxBackgroundSize: '5120px 2880px',
+            parallaxBackgroundHorizontal: 200,
+            parallaxBackgroundVertical: 100,
+            mathjax3: {
+                mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js',
+                options: {
+                    skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+                },
+            },
+            plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath.MathJax3]
+        });
+    </script>
+
+</body>
+
+</html>
